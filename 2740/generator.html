@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENGL 2740 Content Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <style>
+        :root {
+            --bg: #13151f;
+            --panel: #1e2130;
+            --text: #ffffff;
+            --accent: #b8eadd; /* Mint */
+            --border: #2a2d3d;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Lato', sans-serif;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        h1 { font-weight: 300; margin-bottom: 2rem; grid-column: span 2; border-bottom: 1px solid var(--border); padding-bottom: 1rem; }
+        
+        /* Form Styles */
+        .input-group { margin-bottom: 1.5rem; }
+        label { display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: #ccc; font-weight: 700; }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            background: var(--panel);
+            border: 1px solid var(--border);
+            color: white;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        input[type="checkbox"] { margin-right: 10px; transform: scale(1.2); }
+        
+        .row { display: flex; gap: 1rem; }
+        .col { flex: 1; }
+
+        button {
+            background: var(--accent);
+            color: #000;
+            border: none;
+            padding: 12px 24px;
+            font-weight: 700;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+            margin-top: 1rem;
+            transition: opacity 0.2s;
+        }
+        button:hover { opacity: 0.9; }
+
+        /* Output Area */
+        .output-container {
+            background: #000;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            position: sticky;
+            top: 2rem;
+            height: fit-content;
+        }
+
+        textarea {
+            width: 100%;
+            height: 300px;
+            background: #111;
+            border: 1px solid #333;
+            color: #b8eadd;
+            font-family: monospace;
+            padding: 1rem;
+            resize: vertical;
+        }
+
+        h2 { margin-top: 0; font-size: 1.2rem; color: var(--accent); }
+
+        /* PREVIEW STYLES (Copied from your style.css for accuracy) */
+        .preview-box {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: var(--bg);
+            border: 1px dashed var(--border);
+        }
+        
+        /* Minimal CSS required to render the preview correctly */
+        .list-block { margin-bottom: 25px; }
+        .list-header {
+            font-family: 'Lato', sans-serif; font-size: 0.85rem; font-weight: 900; 
+            color: #fff; text-transform: uppercase; letter-spacing: 2px;
+            margin-bottom: 4px; display: block;
+        }
+        .list-row {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 6px 12px; border-radius: 6px;
+            background: rgba(255,255,255,0.02);
+            margin-bottom: 2px; margin-left: 25px; 
+            border-bottom: 1px dashed rgba(255,255,255,0.03);
+        }
+        .row-info { display: flex; align-items: baseline; gap: 10px; flex: 1; }
+        .row-title { text-decoration: none; color: white; font-weight: 300; font-size: 1.1rem; }
+        .row-actions { display: flex; gap: 8px; align-items: center; min-width: 72px; justify-content: flex-end; }
+        .icon-btn {
+            display: flex; align-items: center; justify-content: center;
+            width: 32px; height: 32px; border-radius: 4px; color: #ffffff; 
+            background: rgba(255,255,255,0.08); text-decoration: none;
+        }
+        .icon-spacer { display: block; width: 32px; height: 32px; }
+        .alert-badge {
+            font-size: 0.6rem; font-weight: 700; padding: 2px 6px; border-radius: 4px; 
+            margin-left: 10px; text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .a-login { color: #ffb3c6; border: 1px solid #ffb3c6; }
+        .a-buy { color: #ffeebb; border: 1px solid #ffeebb; }
+        .material-symbols-outlined { font-size: 20px; }
+
+    </style>
+</head>
+<body>
+
+    <h1>ENGL 2740 HTML Generator</h1>
+
+    <div class="form-container">
+        
+        <div class="input-group">
+            <label>1. Content Location</label>
+            <select id="contentType">
+                <option value="reading">Reading (Main Column)</option>
+                <option value="sidebar">Video/Resource (Sidebar)</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>2. Grouping</label>
+            <div style="display:flex; align-items:center; margin-bottom:10px;">
+                <input type="checkbox" id="newBlock" checked>
+                <span style="font-size:0.9rem;">Create New Author Block? (Uncheck to add row to existing author)</span>
+            </div>
+            <label for="authorName">Author / Header Name</label>
+            <input type="text" id="authorName" placeholder="e.g., Harriet Jacobs">
+        </div>
+
+        <div class="input-group">
+            <label>3. The Work</label>
+            <label for="workTitle">Title of Work</label>
+            <input type="text" id="workTitle" placeholder="e.g., Incidents in the Life">
+            
+            <div style="margin-top:10px;">
+                <label style="display:inline-flex; align-items:center; margin-right:15px;">
+                    <input type="checkbox" id="badgeLogin"> Login Required
+                </label>
+                <label style="display:inline-flex; align-items:center;">
+                    <input type="checkbox" id="badgeBuy"> Buy Book
+                </label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>4. Links (Leave blank if not applicable)</label>
+            
+            <label for="linkRead">Read Link (File name or URL)</label>
+            <input type="text" id="linkRead" placeholder="e.g., reading-jacobs-intro.html">
+            
+            <label for="linkListen">Audiobook Link (URL)</label>
+            <input type="text" id="linkListen" placeholder="e.g., https://librivox.org/...">
+
+            <label for="linkWatch">Watch Link (URL)</label>
+            <input type="text" id="linkWatch" placeholder="e.g., https://youtube.com/...">
+        </div>
+
+        <button onclick="generateHTML()">Generate HTML</button>
+    </div>
+
+    <div class="output-container">
+        <h2>Generated Code</h2>
+        <textarea id="outputCode" readonly></textarea>
+        <button onclick="copyCode()" style="background: #444; color: white; margin-top:10px;">Copy to Clipboard</button>
+
+        <h2 style="margin-top: 2rem;">Visual Preview</h2>
+        <div id="previewArea" class="preview-box">
+            </div>
+    </div>
+
+    <script>
+        function generateHTML() {
+            // 1. Get Values
+            const type = document.getElementById('contentType').value;
+            const isNewBlock = document.getElementById('newBlock').checked;
+            const author = document.getElementById('authorName').value;
+            const title = document.getElementById('workTitle').value;
+            const linkRead = document.getElementById('linkRead').value.trim();
+            const linkListen = document.getElementById('linkListen').value.trim();
+            const linkWatch = document.getElementById('linkWatch').value.trim();
+            const badgeLogin = document.getElementById('badgeLogin').checked;
+            const badgeBuy = document.getElementById('badgeBuy').checked;
+
+            // 2. Determine Classes
+            // Readings use 'reading-row', Sidebar uses 'sidebar-row'
+            const rowClass = (type === 'reading') ? 'reading-row' : 'sidebar-row';
+            
+            // 3. Build Badges
+            let badgeHTML = '';
+            if (badgeLogin) badgeHTML += `\n                        <span class="alert-badge a-login">LOGIN REQUIRED</span>`;
+            if (badgeBuy) badgeHTML += `\n                        <span class="alert-badge a-buy">BUY BOOK</span>`;
+
+            // 4. Build Title Link
+            // If there is a Read Link, the title links there. If not, check Watch, then Listen.
+            let titleHref = '#';
+            if (linkRead) titleHref = linkRead;
+            else if (linkWatch) titleHref = linkWatch;
+            else if (linkListen) titleHref = linkListen;
+            
+            // 5. Build Action Buttons
+            let actionsHTML = '';
+            let count = 0;
+
+            // Read Button
+            if (linkRead) {
+                actionsHTML += `
+                        <a href="${linkRead}" ${linkRead.startsWith('http') ? 'target="_blank"' : ''} class="icon-btn read" aria-label="Read ${title}" title="Read Text">
+                            <span class="material-symbols-outlined">${type === 'sidebar' && !linkRead.includes('html') ? 'auto_stories' : 'menu_book'}</span>
+                        </a>`;
+                count++;
+            }
+
+            // Watch Button
+            if (linkWatch) {
+                actionsHTML += `
+                        <a href="${linkWatch}" target="_blank" class="icon-btn watch" aria-label="Watch ${title}" title="Watch Video">
+                            <span class="material-symbols-outlined">videocam</span>
+                        </a>`;
+                count++;
+            }
+
+            // Listen Button
+            if (linkListen) {
+                actionsHTML += `
+                        <a href="${linkListen}" target="_blank" class="icon-btn listen" aria-label="Listen to ${title}" title="Listen Audio">
+                            <span class="material-symbols-outlined">headphones</span>
+                        </a>`;
+                count++;
+            }
+
+            // Add Spacers if needed (To keep layout alignment if only 1 item exists)
+            // If you prefer strict right alignment without spacers, remove this loop.
+            if (count < 2) {
+                actionsHTML = `
+                        <span class="icon-spacer"></span>` + actionsHTML;
+            }
+
+            // 6. Construct the Row HTML
+            let html = `
+                <div class="list-row ${rowClass}">
+                    <div class="row-info">
+                        <a href="${titleHref}" ${titleHref.startsWith('http') ? 'target="_blank"' : ''} class="row-title">${title}</a>${badgeHTML}
+                    </div>
+                    <div class="row-actions">${actionsHTML}
+                    </div>
+                </div>`;
+
+            // 7. Wrap in List Block if requested
+            if (isNewBlock) {
+                html = `<div class="list-block">
+                <span class="list-header">${author}</span>
+${html}
+            </div>`;
+            }
+
+            // 8. Output
+            const codeBox = document.getElementById('outputCode');
+            codeBox.value = html;
+
+            const previewBox = document.getElementById('previewArea');
+            previewBox.innerHTML = html;
+        }
+
+        function copyCode() {
+            const copyText = document.getElementById("outputCode");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); 
+            navigator.clipboard.writeText(copyText.value);
+            alert("HTML copied to clipboard!");
+        }
+    </script>
+</body>
+</html>
