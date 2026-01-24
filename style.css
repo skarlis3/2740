@@ -601,6 +601,19 @@ body.light-mode .score-img { filter: none; opacity: 1; }
     border-bottom: 1px solid var(--border);
 }
 
+/* Close button for resource pages */
+.close-btn {
+    font-size: 1.2rem;
+    line-height: 1;
+    color: var(--text-muted);
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: color 0.2s;
+}
+.close-btn:hover {
+    color: var(--text-main);
+}
+
 .general-container {
     max-width: 800px; 
     margin: 0 auto; 
