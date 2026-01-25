@@ -414,7 +414,7 @@ body.light-mode .glass-header { background: rgba(242, 244, 248, 0.95); }
 .poetry-text p { 
     margin-bottom: 0;
     text-indent: -1rem;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     position: relative;
     counter-increment: poem-line;
 }
