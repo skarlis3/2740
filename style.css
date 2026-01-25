@@ -409,7 +409,7 @@ body.light-mode .glass-header { background: rgba(242, 244, 248, 0.95); }
 /* POETRY: Line Numbers (Every 5th line) */
 .poetry-text { 
     counter-reset: poem-line; 
-    padding-left: 2rem;
+    padding-left: 3.5rem;
 }
 .poetry-text p { 
     margin-bottom: 0;
@@ -421,7 +421,7 @@ body.light-mode .glass-header { background: rgba(242, 244, 248, 0.95); }
 .poetry-text p:nth-child(5n)::before { 
     content: counter(poem-line); 
     position: absolute; 
-    left: -2.5rem;
+    left: -3rem;
     top: 0; 
     width: 2rem;
     text-align: right;
