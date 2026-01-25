@@ -430,6 +430,14 @@ body.light-mode .glass-header { background: rgba(242, 244, 248, 0.95); }
     color: var(--loc-color);
 }
 
+.poetry-text p.indent {
+    padding-left: 4rem;
+}
+
+.poetry-text p.stanza-break {
+    margin-top: 1.5rem;
+}
+
 /* MISC READING ELEMENTS */
 .epigraph-poem { margin: 2rem 0; font-family: var(--reading-font); font-style: italic; color: var(--text-muted); }
 .musical-score { width: 100%; margin: 3rem 0; display: flex; justify-content: center; }
