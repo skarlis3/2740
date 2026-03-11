@@ -221,6 +221,58 @@ body.article-page .general-container {
     outline-offset: 2px;
 }
 
+/* --- GLOSSARY (definition lists) --- */
+.article-glossary {
+    padding: 0;
+    margin: 0;
+}
+
+.article-glossary dt {
+    color: var(--c-read);
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    padding-bottom: 4px;
+}
+
+.article-glossary dt:first-child {
+    margin-top: 0;
+}
+
+.article-glossary dd {
+    margin-left: 0;
+    padding-left: 20px;
+    border-left: 2px solid var(--border);
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* --- PREV/NEXT NAVIGATION --- */
+.article-prev-next {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.article-prev-next .action-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.article-prev-next .action-btn--next {
+    text-align: right;
+    margin-left: auto;
+}
+
+.article-prev-next-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+}
+
 /* --- RESPONSIVE --- */
 @media (max-width: 900px) {
     .article-title {
