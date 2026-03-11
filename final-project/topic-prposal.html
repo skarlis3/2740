@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project: Topic Proposal – ENGL 2740</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../articles.css">
+    <link rel="stylesheet" href="fp.css">
+</head>
+<body class="article-page">
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="simple-header">
+        <div class="logo"><a href="../index.html">ENGL 2740</a> / Final Project</div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <button class="article-theme-toggle" id="article-theme-toggle" title="Toggle Light/Dark Mode" aria-label="Toggle Theme">
+                <span class="material-symbols-outlined">light_mode</span>
+            </button>
+            <a href="../index.html" aria-label="Return to Index" class="close-btn">&times;</a>
+        </div>
+    </header>
+
+    <button class="fp-mobile-toggle" aria-expanded="false" aria-controls="fp-sidebar">Final Project Navigation</button>
+
+    <div class="fp-layout">
+        <aside class="fp-nav" id="fp-sidebar" aria-label="Final Project navigation"></aside>
+
+        <main id="main-content" class="fp-content">
+
+            <header class="article-header">
+                <h1 class="article-title">Final Project: Topic Proposal</h1>
+                <p class="article-meta">Due April 15 — Submit in Canvas</p>
+            </header>
+
+            <!-- INTRO -->
+            <section class="article-section article-section--intro">
+                <div class="article-callout">
+                    <h2 class="article-callout-title article-callout-title--lg">What This Is</h2>
+                    <p>Time to narrow down. In the brainstorming assignment, you explored a range of directions. Now you're picking <strong>one</strong> and telling me what it is, what you'd be reading through that lens, and what you think you'll need to research to make it work.</p>
+                    <p>This doesn't need to be polished — it's a plan, not a final product. I'm looking for clear thinking, not perfect writing.</p>
+                </div>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- WHAT TO SUBMIT -->
+            <section class="article-section">
+                <h2 class="article-heading">What to Submit</h2>
+
+                <p>Answer each of the following in a few sentences. You can write this as a short document, a Canvas text entry, or however is easiest — just make sure I can read it.</p>
+
+                <ul class="article-bordered-list article-bordered-list--spaced">
+                    <li><strong class="label--read">Your topic or angle</strong>
+                        <p>What's the lens, theme, or framework you're using to explore the literature? This could be a historical angle, a cultural connection, a thematic thread, a literary theory approach, or something else. Be as specific as you can — "gender" is a starting point, but "how Black women writers use domestic spaces to resist oppression" is a topic.</p>
+                    </li>
+                    <li class="border--watch"><strong class="label--watch">Which readings you plan to use</strong>
+                        <p>List the specific texts from our course that you'll be working with. If you're focusing on one longer work, say which one. If you're pulling from multiple weeks, list them all.</p>
+                    </li>
+                    <li class="border--alert"><strong class="label--alert">Why this topic</strong>
+                        <p>What drew you to this direction? What makes it interesting to you? This doesn't need to be deep — even "this is the reading that stuck with me most and I want to understand why" is a real answer.</p>
+                    </li>
+                    <li><strong class="label--read">What you already know and what you'd need to learn</strong>
+                        <p>What do you already understand about this topic from class, your own experience, or general knowledge? And where are the gaps — what would you need to research to build the context your site needs?</p>
+                    </li>
+                </ul>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- NEXT STEPS -->
+            <section class="article-section">
+                <h2 class="article-heading">After You Turn This In</h2>
+
+                <p>Once your topic is set, you'll start gathering sources in earnest for the Research Check-in. Check out the <a href="#" style="color: var(--c-read); text-decoration: underline; text-underline-offset: 3px;">Finding Sources</a> guide for help with where to look, what counts as a scholarly source, and how to evaluate the non-scholarly sources (videos, websites, images) you'll want to use on your site.</p>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="../footer.js"></script>
+    <script src="fp-nav.js"></script>
+    <script>
+    (function() {
+        const toggle = document.getElementById('article-theme-toggle');
+        if (!toggle) return;
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        const body = document.body;
+
+        if (localStorage.getItem('article-theme') === 'light') {
+            body.classList.add('light-mode');
+            icon.textContent = 'dark_mode';
+        }
+
+        toggle.addEventListener('click', function() {
+            body.classList.toggle('light-mode');
+            if (body.classList.contains('light-mode')) {
+                localStorage.setItem('article-theme', 'light');
+                icon.textContent = 'dark_mode';
+            } else {
+                localStorage.setItem('article-theme', 'dark');
+                icon.textContent = 'light_mode';
+            }
+        });
+    })();
+    </script>
+</body>
+</html>
