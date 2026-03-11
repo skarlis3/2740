@@ -18,12 +18,12 @@ body.article-page.light-mode {
     --panel: #ffffff;
     --text-main: #1a1b26;
     --text-muted: #404040;
-    --text-secondary: #595959;
-    --c-read: #407560;
-    --c-watch: #2f5bb5;
-    --c-alert: #b05c7c;
+    --text-secondary: #505050;
+    --c-read: #2a5240;
+    --c-watch: #1a4595;
+    --c-alert: #7d3550;
     --border: rgba(0, 0, 0, 0.1);
-    --focus-ring: #407560;
+    --focus-ring: #2a5240;
 
     --article-callout-bg: rgba(64, 117, 96, 0.06);
     --article-callout-border: rgba(64, 117, 96, 0.2);
