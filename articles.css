@@ -1,0 +1,229 @@
+/* =========================================
+   ARTICLE PAGE STYLES (articles.css)
+   For resource/article pages like literary-theory.html
+   ========================================= */
+
+/* --- ARTICLE CSS VARIABLES --- */
+body.article-page {
+    --article-callout-bg: rgba(184, 234, 221, 0.05);
+    --article-callout-border: rgba(184, 234, 221, 0.2);
+    --article-accent-bg: rgba(187, 211, 255, 0.05);
+    --article-accent-border: rgba(187, 211, 255, 0.15);
+    --article-divider: rgba(255, 255, 255, 0.1);
+}
+
+/* --- LIGHT MODE --- */
+body.article-page.light-mode {
+    --bg-app: #f2f4f8;
+    --panel: #ffffff;
+    --text-main: #1a1b26;
+    --text-muted: #404040;
+    --text-secondary: #595959;
+    --c-read: #407560;
+    --c-watch: #2f5bb5;
+    --c-alert: #b05c7c;
+    --border: rgba(0, 0, 0, 0.1);
+    --focus-ring: #407560;
+
+    --article-callout-bg: rgba(64, 117, 96, 0.06);
+    --article-callout-border: rgba(64, 117, 96, 0.2);
+    --article-accent-bg: rgba(47, 91, 181, 0.06);
+    --article-accent-border: rgba(47, 91, 181, 0.15);
+    --article-divider: rgba(0, 0, 0, 0.1);
+}
+
+body.article-page.light-mode .simple-header {
+    background: rgba(242, 244, 248, 0.95);
+}
+
+/* Override general-container hardcoded color */
+body.article-page .general-container {
+    color: var(--text-main);
+}
+
+/* --- ARTICLE HEADER --- */
+.article-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.article-title {
+    font-weight: 300;
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: -1px;
+    color: var(--text-main);
+}
+
+.article-meta {
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* --- SECTIONS --- */
+.article-section {
+    margin-bottom: 2.5rem;
+}
+
+.article-section--intro {
+    margin-bottom: 3rem;
+}
+
+/* --- SECTION HEADINGS (What, Who, How, etc.) --- */
+.article-heading {
+    color: var(--text-main);
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+    margin-bottom: 1.5rem;
+}
+
+/* --- CALLOUT BOXES --- */
+.article-callout {
+    padding: 25px;
+    border-radius: 8px;
+    background: var(--article-callout-bg);
+    border: 1px solid var(--article-callout-border);
+}
+
+.article-callout--accent {
+    background: var(--article-accent-bg);
+    border: 1px solid var(--article-accent-border);
+}
+
+.article-callout-title {
+    color: var(--c-read);
+    font-weight: 300;
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.article-callout-title--lg {
+    font-size: 1.5rem;
+}
+
+.article-callout-title--accent {
+    color: var(--c-watch);
+}
+
+/* --- BODY TEXT --- */
+.article-section p,
+.article-callout p {
+    line-height: 1.7;
+}
+
+/* --- ORDERED LISTS (Culler's characteristics) --- */
+.article-list {
+    line-height: 1.8;
+    padding-left: 1.5rem;
+}
+
+.article-list li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+/* --- BORDERED LISTS (theory list, essay structure) --- */
+.article-bordered-list {
+    line-height: 1.8;
+    list-style: none;
+    padding-left: 0;
+}
+
+.article-bordered-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    border-left: 2px solid var(--c-read);
+}
+
+.article-bordered-list li.border--watch {
+    border-left-color: var(--c-watch);
+}
+
+.article-bordered-list li.border--alert {
+    border-left-color: var(--c-alert);
+}
+
+/* Accent-colored labels inside bordered list items */
+.article-bordered-list .label--read { color: var(--c-read); }
+.article-bordered-list .label--watch { color: var(--c-watch); }
+.article-bordered-list .label--alert { color: var(--c-alert); }
+
+/* Essay structure list (with nested paragraphs) */
+.article-bordered-list--spaced li {
+    margin-bottom: 1.5rem;
+}
+
+.article-bordered-list--spaced li:last-child {
+    margin-bottom: 1rem;
+}
+
+.article-bordered-list li p {
+    margin-top: 0.5rem;
+}
+
+/* --- DIVIDERS --- */
+.article-divider {
+    border: 0;
+    border-bottom: 1px dashed var(--article-divider);
+    margin: 3rem 0;
+}
+
+/* --- WORKS CITED --- */
+.article-citation {
+    line-height: 1.7;
+    padding-left: 2rem;
+    text-indent: -2rem;
+}
+
+/* --- LICENSE --- */
+.article-license {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* --- BOTTOM NAV --- */
+.article-nav {
+    margin-top: 3rem;
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px dashed var(--article-divider);
+}
+
+/* --- THEME TOGGLE (article pages) --- */
+.article-theme-toggle {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    border-radius: 4px;
+    transition: color 0.2s;
+    background: none;
+    border: none;
+}
+
+.article-theme-toggle:hover {
+    color: var(--c-read);
+}
+
+.article-theme-toggle:focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 2px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+    .article-title {
+        font-size: 1.8rem;
+    }
+}

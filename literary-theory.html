@@ -5,164 +5,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What Is Literary Theory? | ENGL 2740</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="articles.css">
 </head>
-<body>
+<body class="article-page">
 
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header class="simple-header">
         <div class="logo"><a href="index.html">ENGL 2740</a> / Resources</div>
-        <a href="index.html" aria-label="Return to Index" class="close-btn">&times;</a>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <button class="article-theme-toggle" id="article-theme-toggle" title="Toggle Light/Dark Mode" aria-label="Toggle Theme">
+                <span class="material-symbols-outlined">light_mode</span>
+            </button>
+            <a href="index.html" aria-label="Return to Index" class="close-btn">&times;</a>
+        </div>
     </header>
 
     <main id="main-content">
         <div class="general-container">
 
-            <header style="margin-bottom: 3rem; text-align: center;">
-                <h1 style="font-weight: 300; font-size: 2.5rem; margin: 0; letter-spacing: -1px; color: var(--text-main);">What Is Literary Theory and Why Do We Need It?</h1>
-                <p style="color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px; margin-top: 0.5rem; font-size: 0.9rem;">Alice Lopez &middot; Salt Lake Community College</p>
+            <header class="article-header">
+                <h1 class="article-title">What Is Literary Theory and Why Do We Need It?</h1>
+                <p class="article-meta">Alice Lopez &middot; Salt Lake Community College</p>
             </header>
 
             <!-- TL;DR -->
-            <section style="margin-bottom: 3rem; background: rgba(184, 234, 221, 0.05); padding: 25px; border-radius: 8px; border: 1px solid rgba(184, 234, 221, 0.2);">
-                <h2 style="color: var(--c-read); font-weight: 300; margin-top: 0; font-size: 1.5rem;">Too Long; Didn't Read (TL; DR)</h2>
+            <section class="article-section article-section--intro article-callout">
+                <h2 class="article-callout-title article-callout-title--lg">Too Long; Didn't Read (TL; DR)</h2>
                 <p>Literary theory is a set of tools we use to analyze and find deeper meaning in the texts we read. Each different theory sheds light on a specific aspect of literature and written stories, which in turn provides us with a focus for interpretation of them. You also might have heard of this kind of theory referred to as critical theory. According to Jonathan Culler, a Professor of English and Comparative Literature at Cornell University, what we refer to as theory "includes works of anthropology, art history, film studies, gender studies, linguistics, philosophy, political theory, psychoanalysis, science studies, social and intellectual history, and sociology" (3-4). These works have had an impact beyond the field of study they came from because their ideas are widely applicable, including to literature.</p>
             </section>
 
             <!-- WHAT -->
-            <section style="margin-bottom: 2.5rem;">
-                <h2 style="color: var(--text-main); font-weight: 700; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 1.5rem;">What</h2>
+            <section class="article-section">
+                <h2 class="article-heading">What</h2>
 
-                <p style="line-height: 1.7;">When we read literature, we tend to make sense of what we read through our own experiences. In the introduction to the book <em>Literary Theory: An Introduction</em>, Terry Eagleton explains that: "[…] we always interpret literary works to some extent in the light of our own concerns" (10). So in order to deepen our personal interpretation of a text and to explore different viewpoints on it, we rely on literary theory.</p>
+                <p>When we read literature, we tend to make sense of what we read through our own experiences. In the introduction to the book <em>Literary Theory: An Introduction</em>, Terry Eagleton explains that: "[…] we always interpret literary works to some extent in the light of our own concerns" (10). So in order to deepen our personal interpretation of a text and to explore different viewpoints on it, we rely on literary theory.</p>
 
-                <p style="line-height: 1.7;">Literary theory is a critical approach that you can choose to focus your textual analysis. In this context, the word "critical" does not mean engaging in scathing commentary on a text. Rather, a critical approach is one where you evaluate what you read and think about it from different perspectives. The word theory, in this instance, is not as abstract as it may sound – a theory is just an idea that was explored in depth in order to explain and interpret complex social systems or phenomena. A theory is not something that is simple or obvious, as it must be researched and fleshed out, and it usually has not been created specifically for literature analysis. Instead, a theory is made of "[…] writings from outside the field of literary studies [that] have been taken up by people in literary studies because their analyses of language, or mind, or history, or culture, offer new and persuasive accounts of textual and cultural matters" (Culler 3-4). These writings from different fields help us use specialized knowledge. Depending on what you are most interested in exploring within a text, you will choose a theory that can provide the most insight into this specific area.</p>
+                <p>Literary theory is a critical approach that you can choose to focus your textual analysis. In this context, the word "critical" does not mean engaging in scathing commentary on a text. Rather, a critical approach is one where you evaluate what you read and think about it from different perspectives. The word theory, in this instance, is not as abstract as it may sound – a theory is just an idea that was explored in depth in order to explain and interpret complex social systems or phenomena. A theory is not something that is simple or obvious, as it must be researched and fleshed out, and it usually has not been created specifically for literature analysis. Instead, a theory is made of "[…] writings from outside the field of literary studies [that] have been taken up by people in literary studies because their analyses of language, or mind, or history, or culture, offer new and persuasive accounts of textual and cultural matters" (Culler 3-4). These writings from different fields help us use specialized knowledge. Depending on what you are most interested in exploring within a text, you will choose a theory that can provide the most insight into this specific area.</p>
 
-                <p style="line-height: 1.7;">These different theories are sometimes described as critical lenses. I like to think of a critical lens as a set of colored glasses: when wearing them, some colors will be made less visible, while others will stand out and become easier to focus on. For example, imagine wearing glasses with pink lenses. Everything you see will have a pink tint to it, which will alter the way you see colors: some colors will be accentuated, while others (like blue light) will be less noticeable. Wearing the colored lenses might also change your depth perception, or how well you see the contours of your environment. In short, changing the color of the lens on your glasses will allow you to see a different view than you would with the naked eye. Theory does similar for a text, helping us see it with a different view than we could while reading it alone. Some of the most common and widely-used literary theories are psychoanalytic theory, feminist theory, structuralism/ post-structuralism, and Marxist theory.</p>
+                <p>These different theories are sometimes described as critical lenses. I like to think of a critical lens as a set of colored glasses: when wearing them, some colors will be made less visible, while others will stand out and become easier to focus on. For example, imagine wearing glasses with pink lenses. Everything you see will have a pink tint to it, which will alter the way you see colors: some colors will be accentuated, while others (like blue light) will be less noticeable. Wearing the colored lenses might also change your depth perception, or how well you see the contours of your environment. In short, changing the color of the lens on your glasses will allow you to see a different view than you would with the naked eye. Theory does similar for a text, helping us see it with a different view than we could while reading it alone. Some of the most common and widely-used literary theories are psychoanalytic theory, feminist theory, structuralism/ post-structuralism, and Marxist theory.</p>
             </section>
 
             <!-- Culler's Characteristics -->
-            <section style="margin-bottom: 2.5rem; background: rgba(184, 234, 221, 0.05); padding: 25px; border-radius: 8px; border: 1px solid rgba(184, 234, 221, 0.2);">
-                <h3 style="color: var(--c-read); font-weight: 300; margin-top: 0; font-size: 1.3rem;">Characteristics of Theory</h3>
+            <section class="article-section article-callout">
+                <h3 class="article-callout-title">Characteristics of Theory</h3>
                 <p>In his introduction to literary theory, Jonathan Culler shares the following list of characteristics of theory:</p>
-                <ol style="line-height: 1.8; padding-left: 1.5rem;">
-                    <li style="margin-bottom: 10px; padding-left: 10px;">Theory is interdisciplinary – discourse with effects outside an original discipline</li>
-                    <li style="margin-bottom: 10px; padding-left: 10px;">Theory is analytical and speculative – an attempt to work out what is involved in what we call sex or language or writing or meaning or the subject</li>
-                    <li style="margin-bottom: 10px; padding-left: 10px;">Theory is a critique of common sense, of concepts taken as natural</li>
-                    <li style="margin-bottom: 10px; padding-left: 10px;">Theory is reflexive, or thinking about thinking; enquiry into the categories we use in making sense of things, in literature and in other discursive practices (14-15)</li>
+                <ol class="article-list">
+                    <li>Theory is interdisciplinary – discourse with effects outside an original discipline</li>
+                    <li>Theory is analytical and speculative – an attempt to work out what is involved in what we call sex or language or writing or meaning or the subject</li>
+                    <li>Theory is a critique of common sense, of concepts taken as natural</li>
+                    <li>Theory is reflexive, or thinking about thinking; enquiry into the categories we use in making sense of things, in literature and in other discursive practices (14-15)</li>
                 </ol>
             </section>
 
-            <section style="margin-bottom: 2.5rem;">
-                <p style="line-height: 1.7;">Note that using theory requires using ideas from different fields of study (interdisciplinarity) to explore ideas that we might take for granted: we must examine our views and thoughts about certain topics. It also asks that we read the text closely and engage in critical thinking to break down the story's topics (analysis). Finally, working with theory means that we propose potential ideas to answer the questions we ask of the text (speculation).</p>
+            <section class="article-section">
+                <p>Note that using theory requires using ideas from different fields of study (interdisciplinarity) to explore ideas that we might take for granted: we must examine our views and thoughts about certain topics. It also asks that we read the text closely and engage in critical thinking to break down the story's topics (analysis). Finally, working with theory means that we propose potential ideas to answer the questions we ask of the text (speculation).</p>
 
-                <p style="line-height: 1.7;">Why would we need the help of theoretical texts to find new or deeper meaning in what we read? To put it simply, literary theory helps us understand what lies beneath the storyline and gives us the words to describe this. For example, by providing us with definitions, descriptions, and explanations of abstract ideas, literary theory becomes a means to explore the psychology of the narrative's characters, delve into the historical and sociopolitical context of the story, or articulate the structure of the text, among other things. With literary theory, we can question the assumptions, values, and ideologies underlying the narrative.</p>
+                <p>Why would we need the help of theoretical texts to find new or deeper meaning in what we read? To put it simply, literary theory helps us understand what lies beneath the storyline and gives us the words to describe this. For example, by providing us with definitions, descriptions, and explanations of abstract ideas, literary theory becomes a means to explore the psychology of the narrative's characters, delve into the historical and sociopolitical context of the story, or articulate the structure of the text, among other things. With literary theory, we can question the assumptions, values, and ideologies underlying the narrative.</p>
             </section>
 
             <!-- Frankenstein Example -->
-            <section style="margin-bottom: 2.5rem; background: rgba(255, 179, 198, 0.05); padding: 25px; border-radius: 8px; border: 1px solid rgba(255, 179, 198, 0.15);">
-                <h3 style="color: var(--c-watch); font-weight: 300; margin-top: 0; font-size: 1.3rem;">Example: <em>Frankenstein</em></h3>
-                <p style="line-height: 1.7;">Here is a quick example. Let's pretend you are reading Mary Shelley's <em>Frankenstein</em> for a class. You know that this book is one of the first examples of science fiction and in the genre of Gothic horror. Interestingly, at a time when most books were written by well-to-do men, this ever-so-famous classic was authored by a young woman between the ages of 18 and 19. As you read, you cannot help but think that the main protagonist, Victor, has a bit of a strange relationship with Elizabeth and with his mother. You can describe what takes place in the book and express your opinion, but you begin asking questions that go beyond the plot of the text itself. Are the characters acting within the boundaries of expected gender roles? Is Victor's view of women common for the time? Are author Mary Shelley's own attitudes about gender showing through her characters?</p>
+            <section class="article-section article-callout article-callout--accent">
+                <h3 class="article-callout-title article-callout-title--accent">Example: <em>Frankenstein</em></h3>
+                <p>Here is a quick example. Let's pretend you are reading Mary Shelley's <em>Frankenstein</em> for a class. You know that this book is one of the first examples of science fiction and in the genre of Gothic horror. Interestingly, at a time when most books were written by well-to-do men, this ever-so-famous classic was authored by a young woman between the ages of 18 and 19. As you read, you cannot help but think that the main protagonist, Victor, has a bit of a strange relationship with Elizabeth and with his mother. You can describe what takes place in the book and express your opinion, but you begin asking questions that go beyond the plot of the text itself. Are the characters acting within the boundaries of expected gender roles? Is Victor's view of women common for the time? Are author Mary Shelley's own attitudes about gender showing through her characters?</p>
 
-                <p style="line-height: 1.7;">In order to take your analysis further, you pick a theory to work with. In this case, you decide to use feminist theory to think about gender roles in the book. If instead you had an interest in the economic power structure depicted in this book, then you could choose to analyze the text using Marxist theory. This critical lens focuses on the struggle between different social classes. In this case, Victor Frankenstein and his monster could be viewed as belonging to two different classes (bourgeois and proletariat, respectively). When viewed in this way, the struggle between these two characters and its resolution take on a different meaning (Moretti).</p>
+                <p>In order to take your analysis further, you pick a theory to work with. In this case, you decide to use feminist theory to think about gender roles in the book. If instead you had an interest in the economic power structure depicted in this book, then you could choose to analyze the text using Marxist theory. This critical lens focuses on the struggle between different social classes. In this case, Victor Frankenstein and his monster could be viewed as belonging to two different classes (bourgeois and proletariat, respectively). When viewed in this way, the struggle between these two characters and its resolution take on a different meaning (Moretti).</p>
 
-                <p style="line-height: 1.7;">If you would like to see some examples of how to analyze a text with the writings of a theorist, I recommend Jonathan Culler's "Chapter 1: What is Theory" in <em>Literary Theory: A Very Short Introduction</em>.</p>
+                <p>If you would like to see some examples of how to analyze a text with the writings of a theorist, I recommend Jonathan Culler's "Chapter 1: What is Theory" in <em>Literary Theory: A Very Short Introduction</em>.</p>
             </section>
 
-            <hr style="border: 0; border-bottom: 1px dashed rgba(255,255,255,0.1); margin: 3rem 0;">
+            <hr class="article-divider">
 
             <!-- WHO -->
-            <section style="margin-bottom: 2.5rem;">
-                <h2 style="color: var(--text-main); font-weight: 700; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 1.5rem;">Who</h2>
+            <section class="article-section">
+                <h2 class="article-heading">Who</h2>
 
-                <p style="line-height: 1.7;">Over time, philosophers and theorists from different fields of study have explored and offered many ideas to think about and make sense of our world. As literature became a field of study in "the eighteenth and nineteenth centuries," there was an "emergence of literary studies in universities in Germany, France, England, America, and elsewhere, and that institutional development made necessary the development of methods of teaching that were associated with methods for conducting literary research" (Ryan 3). For example, in the mid- to late-20th century, a movement called Postmodernism (led, among others, by philosophers like Michel Foucault and Roland Barthes) discussed how society defines some people as "other," creating categories such as deviant. What these authors wrote can help us understand some of the social mechanisms in place to categorize us, to make us conform, and to control us. Another example of theory is postcolonialism, a school of thought that considers the impact of colonialism and offers ways to resist and unsettle colonial power structures. One last example of a framework you could work with is disability studies, a branch of study analyzing and questioning definitions of disability and the role of society in controlling and erasing the existence of disabled bodies and minds.</p>
+                <p>Over time, philosophers and theorists from different fields of study have explored and offered many ideas to think about and make sense of our world. As literature became a field of study in "the eighteenth and nineteenth centuries," there was an "emergence of literary studies in universities in Germany, France, England, America, and elsewhere, and that institutional development made necessary the development of methods of teaching that were associated with methods for conducting literary research" (Ryan 3). For example, in the mid- to late-20th century, a movement called Postmodernism (led, among others, by philosophers like Michel Foucault and Roland Barthes) discussed how society defines some people as "other," creating categories such as deviant. What these authors wrote can help us understand some of the social mechanisms in place to categorize us, to make us conform, and to control us. Another example of theory is postcolonialism, a school of thought that considers the impact of colonialism and offers ways to resist and unsettle colonial power structures. One last example of a framework you could work with is disability studies, a branch of study analyzing and questioning definitions of disability and the role of society in controlling and erasing the existence of disabled bodies and minds.</p>
 
-                <p style="line-height: 1.7;">In a Lumen Learning article titled "Introduction to Critical Theory," William Stewart provides a chronological list of critical theories. Here is an abbreviated version of this list:</p>
+                <p>In a Lumen Learning article titled "Introduction to Critical Theory," William Stewart provides a chronological list of critical theories. Here is an abbreviated version of this list:</p>
 
-                <ul style="line-height: 1.8; list-style: none; padding-left: 0;">
-                    <li style="margin-bottom: 10px; padding-left: 20px; border-left: 2px solid var(--c-read);"><strong style="color: var(--c-read);">Aestheticism</strong> – often associated with Romanticism, a philosophy defining aesthetic value as the primary goal in understanding literature. (This includes both literary critics who have tried to understand and/or identify aesthetic values, as well as those like Oscar Wilde who have stressed art for art's sake.)</li>
-                    <li style="margin-bottom: 10px; padding-left: 20px; border-left: 2px solid var(--c-read);"><strong style="color: var(--c-read);">Cultural studies</strong> – emphasizes the role of literature in everyday life</li>
-                    <li style="margin-bottom: 10px; padding-left: 20px; border-left: 2px solid var(--c-read);"><strong style="color: var(--c-read);">Deconstruction</strong> – a strategy of "close" reading that elicits the ways that key terms and concepts may be paradoxical or self-undermining, rendering their meaning undecidable</li>
-                    <li style="margin-bottom: 10px; padding-left: 20px; border-left: 2px solid var(--c-watch);"><strong style="color: var(--c-watch);">Gender studies</strong> (see also: feminist literary criticism) – emphasizes themes of gender relations</li>
-                    <li style="margin-bottom: 10px; padding-left: 20px; border-left: 2px solid var(--c-read);"><strong style="color: var(--c-read);">Formalism</strong> – a school of literary criticism and literary theory having mainly to do with structural purposes of a particular text</li>
-                    <li style="margin-bottom: 10px; padding-left: 20px; border-left: 2px solid var(--c-alert);"><strong style="color: var(--c-alert);">Marxism</strong> (see also: Marxist literary criticism) – emphasizes themes of class conflict</li>
-                    <li style="margin-bottom: 10px; padding-left: 20px; border-left: 2px solid var(--c-read);"><strong style="color: var(--c-read);">New Criticism</strong> – looks at literary works on the basis of what is written, and not at the goals of the author or biographical issues</li>
-                    <li style="margin-bottom: 10px; padding-left: 20px; border-left: 2px solid var(--c-read);"><strong style="color: var(--c-read);">New Historicism</strong> – examines works through their historical context(s) and seeks to understand cultural and intellectual history through literature</li>
-                    <li style="margin-bottom: 10px; padding-left: 20px; border-left: 2px solid var(--c-watch);"><strong style="color: var(--c-watch);">Postcolonialism</strong> – focuses on the influences of colonialism in literature, especially regarding the historical conflict resulting from the exploitation of developing countries and indigenous peoples by Western nations</li>
-                    <li style="margin-bottom: 10px; padding-left: 20px; border-left: 2px solid var(--c-watch);"><strong style="color: var(--c-watch);">Postmodernism</strong> – criticism of the conditions present in the twentieth century, often with concern for those viewed as social deviants or the Other</li>
-                    <li style="margin-bottom: 10px; padding-left: 20px; border-left: 2px solid var(--c-alert);"><strong style="color: var(--c-alert);">Psychoanalysis</strong> (see also: psychoanalytic literary criticism) – explores the role of consciousnesses and the unconscious in literature including that of the author, reader, and characters in the text</li>
-                    <li style="margin-bottom: 10px; padding-left: 20px; border-left: 2px solid var(--c-watch);"><strong style="color: var(--c-watch);">Queer theory</strong> – examines, questions, and criticizes the role of gender identity and sexuality in literature</li>
+                <ul class="article-bordered-list">
+                    <li><strong class="label--read">Aestheticism</strong> – often associated with Romanticism, a philosophy defining aesthetic value as the primary goal in understanding literature. (This includes both literary critics who have tried to understand and/or identify aesthetic values, as well as those like Oscar Wilde who have stressed art for art's sake.)</li>
+                    <li><strong class="label--read">Cultural studies</strong> – emphasizes the role of literature in everyday life</li>
+                    <li><strong class="label--read">Deconstruction</strong> – a strategy of "close" reading that elicits the ways that key terms and concepts may be paradoxical or self-undermining, rendering their meaning undecidable</li>
+                    <li class="border--watch"><strong class="label--watch">Gender studies</strong> (see also: feminist literary criticism) – emphasizes themes of gender relations</li>
+                    <li><strong class="label--read">Formalism</strong> – a school of literary criticism and literary theory having mainly to do with structural purposes of a particular text</li>
+                    <li class="border--alert"><strong class="label--alert">Marxism</strong> (see also: Marxist literary criticism) – emphasizes themes of class conflict</li>
+                    <li><strong class="label--read">New Criticism</strong> – looks at literary works on the basis of what is written, and not at the goals of the author or biographical issues</li>
+                    <li><strong class="label--read">New Historicism</strong> – examines works through their historical context(s) and seeks to understand cultural and intellectual history through literature</li>
+                    <li class="border--watch"><strong class="label--watch">Postcolonialism</strong> – focuses on the influences of colonialism in literature, especially regarding the historical conflict resulting from the exploitation of developing countries and indigenous peoples by Western nations</li>
+                    <li class="border--watch"><strong class="label--watch">Postmodernism</strong> – criticism of the conditions present in the twentieth century, often with concern for those viewed as social deviants or the Other</li>
+                    <li class="border--alert"><strong class="label--alert">Psychoanalysis</strong> (see also: psychoanalytic literary criticism) – explores the role of consciousnesses and the unconscious in literature including that of the author, reader, and characters in the text</li>
+                    <li class="border--watch"><strong class="label--watch">Queer theory</strong> – examines, questions, and criticizes the role of gender identity and sexuality in literature</li>
                 </ul>
 
-                <p style="line-height: 1.7;">When it comes to applying these theories to literature, we start with the idea that a text is the product of its time: a reflection of society at the time and/or an expression of the author's beliefs and views. Literature opens a window through which we can view a moment in time. We then explore some aspects of the text that we read through the lens of a theory.</p>
+                <p>When it comes to applying these theories to literature, we start with the idea that a text is the product of its time: a reflection of society at the time and/or an expression of the author's beliefs and views. Literature opens a window through which we can view a moment in time. We then explore some aspects of the text that we read through the lens of a theory.</p>
             </section>
 
-            <hr style="border: 0; border-bottom: 1px dashed rgba(255,255,255,0.1); margin: 3rem 0;">
+            <hr class="article-divider">
 
             <!-- HOW -->
-            <section style="margin-bottom: 2.5rem;">
-                <h2 style="color: var(--text-main); font-weight: 700; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 1.5rem;">How</h2>
+            <section class="article-section">
+                <h2 class="article-heading">How</h2>
 
-                <p style="line-height: 1.7;">You might be reading this article to prepare for a specific assignment. It is common for literature courses to ask students to analyze, interpret, and discuss the texts they read. You will generally begin to think about how you should analyze a text when you are engaging in close reading: you will notice recurring themes, salient ideas, etc. Depending on what interests you, you can then determine which theory (or theories) you would like to use.</p>
+                <p>You might be reading this article to prepare for a specific assignment. It is common for literature courses to ask students to analyze, interpret, and discuss the texts they read. You will generally begin to think about how you should analyze a text when you are engaging in close reading: you will notice recurring themes, salient ideas, etc. Depending on what interests you, you can then determine which theory (or theories) you would like to use.</p>
 
-                <p style="line-height: 1.7;">While reading your text, you want to take notes about thoughts you have. You can take these notes in any way that works best for you: paper notepad, voice recordings, digital notepad, etc. Make sure to note page numbers, save important quotes, and document other relevant information so that you are able to reference your findings later. As you do so, you will notice patterns, or parts of the story will stand out to you. Reflect on why you are interested in specific aspects of the story, as this will guide you in choosing which theoretical framework to use. Your professor will likely have introduced you to a few literary theories. Ask yourself which one seems the most relevant to what you would like to analyze.</p>
+                <p>While reading your text, you want to take notes about thoughts you have. You can take these notes in any way that works best for you: paper notepad, voice recordings, digital notepad, etc. Make sure to note page numbers, save important quotes, and document other relevant information so that you are able to reference your findings later. As you do so, you will notice patterns, or parts of the story will stand out to you. Reflect on why you are interested in specific aspects of the story, as this will guide you in choosing which theoretical framework to use. Your professor will likely have introduced you to a few literary theories. Ask yourself which one seems the most relevant to what you would like to analyze.</p>
             </section>
 
             <!-- Essay Structure -->
-            <section style="margin-bottom: 2.5rem; background: rgba(184, 234, 221, 0.05); padding: 25px; border-radius: 8px; border: 1px solid rgba(184, 234, 221, 0.2);">
-                <h3 style="color: var(--c-read); font-weight: 300; margin-top: 0; font-size: 1.3rem;">Writing an Essay with Literary Theory</h3>
+            <section class="article-section article-callout">
+                <h3 class="article-callout-title">Writing an Essay with Literary Theory</h3>
                 <p>If you are writing an essay that uses literary theory, it could have the following structure:</p>
 
-                <ul style="line-height: 1.8; list-style: none; padding-left: 0;">
-                    <li style="margin-bottom: 1.5rem; padding-left: 20px; border-left: 2px solid var(--c-read);">
-                        <strong style="color: var(--c-read);">Briefly introduce the text you will be analyzing:</strong>
-                        <p style="margin-top: 0.5rem;">It is important to provide your audience with some information about when the text was written, to share a few details about the author, and to summarize the main plot points of the story.</p>
+                <ul class="article-bordered-list article-bordered-list--spaced">
+                    <li>
+                        <strong class="label--read">Briefly introduce the text you will be analyzing:</strong>
+                        <p>It is important to provide your audience with some information about when the text was written, to share a few details about the author, and to summarize the main plot points of the story.</p>
                     </li>
-                    <li style="margin-bottom: 1.5rem; padding-left: 20px; border-left: 2px solid var(--c-read);">
-                        <strong style="color: var(--c-read);">Share and explain the theory you will be using:</strong>
-                        <p style="margin-top: 0.5rem;">Once you have situated the text, you will write a couple of paragraphs where you name the theory you will be using, cite its main authors, and explain its most important or relevant ideas.</p>
+                    <li>
+                        <strong class="label--read">Share and explain the theory you will be using:</strong>
+                        <p>Once you have situated the text, you will write a couple of paragraphs where you name the theory you will be using, cite its main authors, and explain its most important or relevant ideas.</p>
                     </li>
-                    <li style="margin-bottom: 1.5rem; padding-left: 20px; border-left: 2px solid var(--c-watch);">
-                        <strong style="color: var(--c-watch);">Make a broader argument about the text:</strong>
-                        <p style="margin-top: 0.5rem;">This is where the analysis starts in earnest. You will draw out ideas from the theory you chose and analyze specific portions of your text with them. You will quote the text to show your audience specific examples of your argument. It is in this section that you will provide depth to your argument. Coming back to the earlier example of <em>Frankenstein</em>, you might have decided to look at the text through the lens of feminist theory. You describe the gender roles portrayed in the story and provide examples from the book showing that women tend to be confined to the home while men work outside. You explore whether this was traditionally the case at the time the book was written and argue that the gender roles in the story reflect that of the era. Continuing to rely on feminist theory, you could then explore whether the gender roles described in the book empower or subjugate the female characters, and you make sure to provide examples from the text to support your argument.</p>
+                    <li class="border--watch">
+                        <strong class="label--watch">Make a broader argument about the text:</strong>
+                        <p>This is where the analysis starts in earnest. You will draw out ideas from the theory you chose and analyze specific portions of your text with them. You will quote the text to show your audience specific examples of your argument. It is in this section that you will provide depth to your argument. Coming back to the earlier example of <em>Frankenstein</em>, you might have decided to look at the text through the lens of feminist theory. You describe the gender roles portrayed in the story and provide examples from the book showing that women tend to be confined to the home while men work outside. You explore whether this was traditionally the case at the time the book was written and argue that the gender roles in the story reflect that of the era. Continuing to rely on feminist theory, you could then explore whether the gender roles described in the book empower or subjugate the female characters, and you make sure to provide examples from the text to support your argument.</p>
                     </li>
-                    <li style="margin-bottom: 1rem; padding-left: 20px; border-left: 2px solid var(--c-watch);">
-                        <strong style="color: var(--c-watch);">Provide a conclusion:</strong>
-                        <p style="margin-top: 0.5rem;">Reiterate the main points you have made in the body of your paper. A conclusion is also a great opportunity to open your findings to broader interpretations.</p>
+                    <li class="border--watch">
+                        <strong class="label--watch">Provide a conclusion:</strong>
+                        <p>Reiterate the main points you have made in the body of your paper. A conclusion is also a great opportunity to open your findings to broader interpretations.</p>
                     </li>
                 </ul>
             </section>
 
             <!-- Closing -->
-            <section style="margin-bottom: 2.5rem;">
-                <p style="line-height: 1.7;">By now, you should feel clearer on what constitutes literary theory and how it is used in analysis. You should also have a sense of the different theories available and their respective emphases. Literary analysis is a fantastic way to be curious about what lies beneath a narrative and to unsettle assumptions in the text. It offers frameworks to think critically about larger social questions, many of which still affect us today. Such analyses even provide us with opportunities to reflect on our own perceptions and biases. As literary theory enhances our critical skills and allows us to engage in deeper inquiries, we develop an important skillset that we can rely on in situations beyond the classroom.</p>
+            <section class="article-section">
+                <p>By now, you should feel clearer on what constitutes literary theory and how it is used in analysis. You should also have a sense of the different theories available and their respective emphases. Literary analysis is a fantastic way to be curious about what lies beneath a narrative and to unsettle assumptions in the text. It offers frameworks to think critically about larger social questions, many of which still affect us today. Such analyses even provide us with opportunities to reflect on our own perceptions and biases. As literary theory enhances our critical skills and allows us to engage in deeper inquiries, we develop an important skillset that we can rely on in situations beyond the classroom.</p>
             </section>
 
-            <hr style="border: 0; border-bottom: 1px dashed rgba(255,255,255,0.1); margin: 3rem 0;">
+            <hr class="article-divider">
 
             <!-- Works Cited -->
-            <section style="margin-bottom: 2.5rem;">
-                <h2 style="color: var(--text-main); font-weight: 700; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 1.5rem;">Works Cited</h2>
+            <section class="article-section">
+                <h2 class="article-heading">Works Cited</h2>
 
-                <p style="line-height: 1.7; padding-left: 2rem; text-indent: -2rem;">Culler, Jonathan D. <em>Literary Theory: A Very Short Introduction</em>. Oxford University Press, 1997.</p>
-                <p style="line-height: 1.7; padding-left: 2rem; text-indent: -2rem;">Eagleton, Terry. <em>Literary Theory: An Introduction</em>, University of Minnesota Press, 2008.</p>
-                <p style="line-height: 1.7; padding-left: 2rem; text-indent: -2rem;">Moretti, Franco. <em>Signs Taken For Wonders: Essays in the Sociology of Literary Forms</em>. Verso, 1997.</p>
-                <p style="line-height: 1.7; padding-left: 2rem; text-indent: -2rem;">Rivkin, Julie, and Michael Ryan, editor. <em>Literary Theory: An Anthology</em>. 3rd ed., John Wiley &amp; Sons, Inc. 2017.</p>
-                <p style="line-height: 1.7; padding-left: 2rem; text-indent: -2rem;">Ryan, Michael, editor. <em>Literary Theory: A Practical Introduction</em>. 3rd ed., John Wiley &amp; Sons, Inc., 2017.</p>
-                <p style="line-height: 1.7; padding-left: 2rem; text-indent: -2rem;">Stewart, William. "Introduction to Critical Theory." <em>Lumen</em>, <a href="https://courses.lumenlearning.com/atd-herkimer-english2/chapter/introduction-to-critical-theory/">https://courses.lumenlearning.com/atd-herkimer-english2/chapter/introduction-to-critical-theory/</a>. Accessed 31 March 2024.</p>
+                <p class="article-citation">Culler, Jonathan D. <em>Literary Theory: A Very Short Introduction</em>. Oxford University Press, 1997.</p>
+                <p class="article-citation">Eagleton, Terry. <em>Literary Theory: An Introduction</em>, University of Minnesota Press, 2008.</p>
+                <p class="article-citation">Moretti, Franco. <em>Signs Taken For Wonders: Essays in the Sociology of Literary Forms</em>. Verso, 1997.</p>
+                <p class="article-citation">Rivkin, Julie, and Michael Ryan, editor. <em>Literary Theory: An Anthology</em>. 3rd ed., John Wiley &amp; Sons, Inc. 2017.</p>
+                <p class="article-citation">Ryan, Michael, editor. <em>Literary Theory: A Practical Introduction</em>. 3rd ed., John Wiley &amp; Sons, Inc., 2017.</p>
+                <p class="article-citation">Stewart, William. "Introduction to Critical Theory." <em>Lumen</em>, <a href="https://courses.lumenlearning.com/atd-herkimer-english2/chapter/introduction-to-critical-theory/">https://courses.lumenlearning.com/atd-herkimer-english2/chapter/introduction-to-critical-theory/</a>. Accessed 31 March 2024.</p>
             </section>
 
             <!-- About the Author -->
-            <section style="margin-bottom: 2.5rem; background: rgba(184, 234, 221, 0.05); padding: 25px; border-radius: 8px; border: 1px solid rgba(184, 234, 221, 0.2);">
-                <h3 style="color: var(--c-read); font-weight: 300; margin-top: 0; font-size: 1.3rem;">About the Author</h3>
-                <p style="line-height: 1.7;">Alice Lopez is a professor in the Department of English, Linguistics &amp; Writing Studies at SLCC. She received her BA in Writing Studies and MA in Rhetoric &amp; Composition from the University of Utah. She is currently a student in the Rhetoric &amp; Composition PhD program at the U. She is interested in multimodal composition and disability studies. In her free time, Alice can be found taking photos, playing with fountain pens or typewriters, and taking care of her Sphynx cats.</p>
+            <section class="article-section article-callout">
+                <h3 class="article-callout-title">About the Author</h3>
+                <p>Alice Lopez is a professor in the Department of English, Linguistics &amp; Writing Studies at SLCC. She received her BA in Writing Studies and MA in Rhetoric &amp; Composition from the University of Utah. She is currently a student in the Rhetoric &amp; Composition PhD program at the U. She is interested in multimodal composition and disability studies. In her free time, Alice can be found taking photos, playing with fountain pens or typewriters, and taking care of her Sphynx cats.</p>
             </section>
 
             <!-- License -->
             <section style="margin-bottom: 1rem;">
-                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.6; font-style: italic;"><em>Literary Studies @ SLCC</em> Copyright &copy; 2023 by Stacey Van Dahm; Daniel Baird; and Nikki Mantyla is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>, except where otherwise noted.</p>
+                <p class="article-license"><em>Literary Studies @ SLCC</em> Copyright &copy; 2023 by Stacey Van Dahm; Daniel Baird; and Nikki Mantyla is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>, except where otherwise noted.</p>
             </section>
 
-            <div style="margin-top: 3rem; text-align: center; padding-top: 2rem; border-top: 1px dashed rgba(255,255,255,0.1);">
+            <div class="article-nav">
                 <a href="index.html" class="action-btn" aria-label="Return to Course Hub">Return to Course Hub</a>
             </div>
 
@@ -171,5 +177,30 @@
 
     <script src="script.js"></script>
     <script src="footer.js"></script>
+    <script>
+    (function() {
+        const toggle = document.getElementById('article-theme-toggle');
+        if (!toggle) return;
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        const body = document.body;
+
+        // Load saved preference
+        if (localStorage.getItem('article-theme') === 'light') {
+            body.classList.add('light-mode');
+            icon.textContent = 'dark_mode';
+        }
+
+        toggle.addEventListener('click', function() {
+            body.classList.toggle('light-mode');
+            if (body.classList.contains('light-mode')) {
+                localStorage.setItem('article-theme', 'light');
+                icon.textContent = 'dark_mode';
+            } else {
+                localStorage.setItem('article-theme', 'dark');
+                icon.textContent = 'light_mode';
+            }
+        });
+    })();
+    </script>
 </body>
 </html>
