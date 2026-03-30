@@ -6,8 +6,8 @@
         <nav class="fp-nav-section" aria-label="Final Project assignments">
             <p class="fp-nav-section-title">Assignments</p>
             <a href="/final-project/" class="fp-nav-link" data-page="index">Final Project Overview</a>
-            <a href="#" class="fp-nav-link placeholder" data-page="brainstorming">Brainstorming Assignment</a>
-            <a href="#" class="fp-nav-link placeholder" data-page="proposal">Topic Proposal</a>
+            <a href="/final-project/brainstorming-assignment.html" class="fp-nav-link" data-page="brainstorming">Brainstorming Assignment</a>
+            <a href="/final-project/topic-proposal.html" class="fp-nav-link" data-page="proposal">Topic Proposal</a>
             <a href="#" class="fp-nav-link placeholder" data-page="planning">Planning Assignment</a>
         </nav>
 
