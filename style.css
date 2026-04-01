@@ -55,7 +55,7 @@ body.light-mode:not(.hub-page) {
     /* Darker accents for visibility on white */
     --c-read: #407560;    
     --c-watch: #2f5bb5;  
-    --c-alert: #b05c7c;      
+    --c-alert: #993d60;
     
     --reading-bg: #ffffff;
     --reading-text: #1a1b26;
@@ -650,4 +650,26 @@ body.light-mode .score-img { filter: none; opacity: 1; }
 .site-footer a:focus-visible {
     outline: 2px solid var(--focus-ring);
     outline-offset: 2px;
+}
+
+/* =========================================
+   LINK DISTINGUISHABILITY
+   ========================================= */
+.reading-content a,
+.article-section a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+/* =========================================
+   REDUCED MOTION
+   ========================================= */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }

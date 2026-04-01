@@ -23,17 +23,17 @@ document.addEventListener("DOMContentLoaded", function() {
         const toolbarHTML = `
             <div class="reader-toolbar header-tools">
                 <div class="btn-group">
-                    <button id="btn-serif" class="tool-btn active" title="Serif Font" aria-label="Switch to Serif Font"><span style="font-family: 'Lora', serif; font-weight:700;">Aa</span></button>
-                    <button id="btn-sans" class="tool-btn" title="Sans-Serif Font" aria-label="Switch to Sans-Serif Font"><span style="font-family: 'Lato', sans-serif; font-weight:700;">Aa</span></button>
+                    <button id="btn-serif" class="tool-btn active" title="Serif Font" aria-label="Switch to Serif Font" aria-pressed="true"><span style="font-family: 'Lora', serif; font-weight:700;">Aa</span></button>
+                    <button id="btn-sans" class="tool-btn" title="Sans-Serif Font" aria-label="Switch to Sans-Serif Font" aria-pressed="false"><span style="font-family: 'Lato', sans-serif; font-weight:700;">Aa</span></button>
                 </div>
                 <div class="btn-group">
                     <button id="btn-smaller" class="tool-btn" title="Decrease Size" aria-label="Decrease Text Size">-</button>
                     <button id="btn-larger" class="tool-btn" title="Increase Size" aria-label="Increase Text Size">+</button>
                 </div>
             </div>
-            <div id="theme-toggle" title="Toggle Light/Dark Mode" aria-label="Toggle Theme" role="button" tabindex="0">
+            <button id="theme-toggle" title="Toggle Light/Dark Mode" aria-label="Toggle Theme" style="background: none; border: none; cursor: pointer;">
                 <span class="material-symbols-outlined">light_mode</span>
-            </div>
+            </button>
         `;
         header.insertAdjacentHTML('beforeend', toolbarHTML);
 
@@ -71,17 +71,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
         btnSerif.addEventListener('click', () => {
             root.style.setProperty('--reading-font', "'Lora', serif");
-            root.style.removeProperty('--line-height'); 
+            root.style.removeProperty('--line-height');
             btnSerif.classList.add('active');
             btnSans.classList.remove('active');
+            btnSerif.setAttribute('aria-pressed', 'true');
+            btnSans.setAttribute('aria-pressed', 'false');
             localStorage.setItem('fontStyle', 'serif');
         });
 
         btnSans.addEventListener('click', () => {
             root.style.setProperty('--reading-font', "'Lato', sans-serif");
-            root.style.setProperty('--line-height', "1.8"); 
+            root.style.setProperty('--line-height', "1.8");
             btnSans.classList.add('active');
             btnSerif.classList.remove('active');
+            btnSans.setAttribute('aria-pressed', 'true');
+            btnSerif.setAttribute('aria-pressed', 'false');
             localStorage.setItem('fontStyle', 'sans');
         });
 
