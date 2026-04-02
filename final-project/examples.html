@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project: Examples – ENGL 2740</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../articles.css">
+    <link rel="stylesheet" href="fp.css">
+</head>
+<body class="article-page">
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="simple-header">
+        <div class="logo"><a href="../index.html">ENGL 2740</a> / Final Project</div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <button class="article-theme-toggle" id="article-theme-toggle" title="Toggle Light/Dark Mode" aria-label="Toggle Theme">
+                <span class="material-symbols-outlined">light_mode</span>
+            </button>
+            <a href="../index.html" aria-label="Return to Index" class="close-btn">&times;</a>
+        </div>
+    </header>
+
+    <button class="fp-mobile-toggle" aria-expanded="false" aria-controls="fp-sidebar">Final Project Navigation</button>
+
+    <div class="fp-layout">
+        <aside class="fp-nav" id="fp-sidebar" aria-label="Final Project navigation"></aside>
+
+        <main id="main-content" class="fp-content">
+
+            <header class="article-header">
+                <h1 class="article-title">Final Project: Examples</h1>
+            </header>
+
+            <section class="article-section article-section--intro">
+                <div class="article-callout">
+                    <p>The example below shows what a close reading and analysis can look like when it's built as a website instead of written as an essay. It's not from our course readings — it's based on a paper I wrote when I was a student — but it demonstrates the kind of thinking your project should include: pulling specific passages from a text, paying attention to language, and using a framework to drive the analysis.</p>
+                    <p style="margin-bottom: 0;">Your project doesn't need to look exactly like this. Use it as a reference for the <em>kind</em> of work, not a template for the format.</p>
+                </div>
+            </section>
+
+            <hr class="article-divider">
+
+            <section class="article-section">
+                <ul class="article-bordered-list article-bordered-list--spaced">
+                    <li>
+                        <strong class="label--read"><a href="https://sites.google.com/view/exampleproject2740/home" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">Example Close Reading &amp; Analysis</a></strong>
+                        <p>A Marxist reading of Rebecca Harding Davis's <em>Life in the Iron Mills</em>, tracking how Davis uses the metaphor of hunger — from literal starvation to soul-starvation — to build toward the downfall of Hugh Wolfe. Built on Google Sites to show what's possible with that platform.</p>
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="../footer.js"></script>
+    <script src="fp-nav.js"></script>
+    <script>
+    (function() {
+        const toggle = document.getElementById('article-theme-toggle');
+        if (!toggle) return;
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        const body = document.body;
+
+        if (localStorage.getItem('article-theme') === 'light') {
+            body.classList.add('light-mode');
+            icon.textContent = 'dark_mode';
+        }
+
+        toggle.addEventListener('click', function() {
+            body.classList.toggle('light-mode');
+            if (body.classList.contains('light-mode')) {
+                localStorage.setItem('article-theme', 'light');
+                icon.textContent = 'dark_mode';
+            } else {
+                localStorage.setItem('article-theme', 'dark');
+                icon.textContent = 'light_mode';
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

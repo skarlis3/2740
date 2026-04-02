@@ -16,6 +16,7 @@
             <a href="#" class="fp-nav-link placeholder" data-page="mla">MLA Citations</a>
             <a href="#" class="fp-nav-link placeholder" data-page="google-sites">Using Google Sites</a>
             <a href="#" class="fp-nav-link placeholder" data-page="sources">Finding Sources</a>
+            <a href="/final-project/examples.html" class="fp-nav-link" data-page="examples">Examples</a>
         </nav>
     `;
 
