@@ -8,6 +8,7 @@
             <a href="/final-project/" class="fp-nav-link" data-page="index">Final Project Overview</a>
             <a href="/final-project/brainstorming-assignment.html" class="fp-nav-link" data-page="brainstorming">Brainstorming Assignment</a>
             <a href="/final-project/topic-proposal.html" class="fp-nav-link" data-page="proposal">Topic Proposal</a>
+            <a href="/final-project/research-checkin.html" class="fp-nav-link" data-page="checkin">Research Check-In</a>
             <a href="#" class="fp-nav-link placeholder" data-page="planning">Planning Assignment</a>
         </nav>
 
@@ -15,7 +16,7 @@
             <p class="fp-nav-section-title">Resources</p>
             <a href="#" class="fp-nav-link placeholder" data-page="mla">MLA Citations</a>
             <a href="#" class="fp-nav-link placeholder" data-page="google-sites">Using Google Sites</a>
-            <a href="#" class="fp-nav-link placeholder" data-page="sources">Finding Sources</a>
+            <a href="/final-project/finding-sources.html" class="fp-nav-link" data-page="sources">Finding Sources</a>
             <a href="/final-project/examples.html" class="fp-nav-link" data-page="examples">Examples</a>
         </nav>
     `;

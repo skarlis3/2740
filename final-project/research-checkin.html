@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project: Research Check-In – ENGL 2740</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../articles.css">
+    <link rel="stylesheet" href="fp.css">
+</head>
+<body class="article-page">
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="simple-header">
+        <div class="logo"><a href="../index.html">ENGL 2740</a> / Final Project</div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <button class="article-theme-toggle" id="article-theme-toggle" title="Toggle Light/Dark Mode" aria-label="Toggle Theme">
+                <span class="material-symbols-outlined">light_mode</span>
+            </button>
+            <a href="../index.html" aria-label="Return to Index" class="close-btn">&times;</a>
+        </div>
+    </header>
+
+    <button class="fp-mobile-toggle" aria-expanded="false" aria-controls="fp-sidebar">Final Project Navigation</button>
+
+    <div class="fp-layout">
+        <aside class="fp-nav" id="fp-sidebar" aria-label="Final Project navigation"></aside>
+
+        <main id="main-content" class="fp-content">
+
+            <header class="article-header">
+                <h1 class="article-title">Final Project: Research Check-In</h1>
+                <p class="article-meta">Due April 19 — Submit in Canvas</p>
+            </header>
+
+            <!-- INTRO -->
+            <section class="article-section article-section--intro">
+                <div class="article-callout">
+                    <h2 class="article-callout-title article-callout-title--lg">What This Is</h2>
+                    <p>A quick snapshot of where you are with finding sources. This isn't a formal assignment — it's a way for me to see that you're making progress and to catch any issues before you get too deep into building your site.</p>
+                    <p>If you're stuck on finding sources, that's exactly what this check-in is for. Let me know what's not working and we'll figure it out.</p>
+                </div>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- WHAT TO SUBMIT -->
+            <section class="article-section">
+                <h2 class="article-heading">What to Submit</h2>
+
+                <p>Upload a document and/or use the Canvas text entry. Nothing formal needed — I just want to see what you're working with.</p>
+
+                <h3>At Least Two Scholarly Sources</h3>
+                <p>For each one, include:</p>
+                <ul class="article-bordered-list">
+                    <li><strong>Name of the source</strong> (article or book title)</li>
+                    <li><strong>Author</strong></li>
+                    <li><strong>Type of source</strong> (journal article, book chapter, etc.)</li>
+                    <li><strong>How you plan to use it</strong> — a sentence or two on how it connects to your project. This doesn't need to be formal; just tell me what it gives you.</li>
+                </ul>
+
+                <p>Not sure what counts as a scholarly source or where to look? See the <a href="finding-sources.html" style="color: var(--c-read); text-decoration: underline; text-underline-offset: 3px;">Finding Sources</a> guide.</p>
+
+                <h3>Other Sources or Multimedia You're Considering</h3>
+                <p>These don't need to be finalized — I just want to see what direction you're heading. Are you looking at documentaries, interviews, music, visual art, archival materials, websites? For each one you mention, include:</p>
+                <ul class="article-bordered-list">
+                    <li><strong>Name or description of the source</strong></li>
+                    <li><strong>Type of source</strong> (video, podcast, image, website, etc.)</li>
+                    <li><strong>How you're thinking about using it</strong> — even "I'm not sure yet but it feels relevant" is fine at this stage.</li>
+                </ul>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- GRADING -->
+            <section class="article-section">
+                <h2 class="article-heading">Grading</h2>
+                <p>Graded on the check system. If you submit at least two scholarly sources with the info above and share your thinking on other sources/multimedia, you'll get full credit. This is about showing progress, not perfection.</p>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="../footer.js"></script>
+    <script src="fp-nav.js"></script>
+    <script>
+    (function() {
+        const toggle = document.getElementById('article-theme-toggle');
+        if (!toggle) return;
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        const body = document.body;
+
+        if (localStorage.getItem('article-theme') === 'light') {
+            body.classList.add('light-mode');
+            icon.textContent = 'dark_mode';
+        }
+
+        toggle.addEventListener('click', function() {
+            body.classList.toggle('light-mode');
+            if (body.classList.contains('light-mode')) {
+                localStorage.setItem('article-theme', 'light');
+                icon.textContent = 'dark_mode';
+            } else {
+                localStorage.setItem('article-theme', 'dark');
+                icon.textContent = 'light_mode';
+            }
+        });
+    })();
+    </script>
+</body>
+</html>
