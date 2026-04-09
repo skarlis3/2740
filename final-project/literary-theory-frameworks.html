@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Literary Theory &amp; Frameworks – ENGL 2740</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../articles.css">
+    <link rel="stylesheet" href="fp.css">
+</head>
+<body class="article-page">
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="simple-header">
+        <div class="logo"><a href="../index.html">ENGL 2740</a> / Final Project</div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <button class="article-theme-toggle" id="article-theme-toggle" title="Toggle Light/Dark Mode" aria-label="Toggle Theme">
+                <span class="material-symbols-outlined">light_mode</span>
+            </button>
+            <a href="../index.html" aria-label="Return to Index" class="close-btn">&times;</a>
+        </div>
+    </header>
+
+    <button class="fp-mobile-toggle" aria-expanded="false" aria-controls="fp-sidebar">Final Project Navigation</button>
+
+    <div class="fp-layout">
+        <aside class="fp-nav" id="fp-sidebar" aria-label="Final Project navigation"></aside>
+
+        <main id="main-content" class="fp-content">
+
+            <header class="article-header">
+                <h1 class="article-title">Literary Theory &amp; Frameworks</h1>
+                <p class="article-meta">Resources for choosing and applying a theoretical lens</p>
+            </header>
+
+            <!-- INTRO -->
+            <section class="article-section article-section--intro">
+                <div class="article-callout">
+                    <h2 class="article-callout-title article-callout-title--lg">Using Theory in Your Project</h2>
+                    <p>You don't have to use a formal literary theory framework in your final project — but if your topic lends itself to one, it can give your analysis more depth and focus. The resources below can help you choose a framework and understand it well enough to apply it to the literature.</p>
+                </div>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- RESOURCES -->
+            <section class="article-section">
+                <h2 class="article-heading">Course Readings</h2>
+
+                <ul class="article-bordered-list article-bordered-list--spaced">
+                    <li><strong class="label--read"><a href="../reading-literary-theory.html" style="color: var(--c-read); text-decoration: underline; text-underline-offset: 3px;">What Is Literary Theory and Why Do We Need It?</a></strong>
+                        <p>Our course reading by Alice Lopez. Introduces what literary theory is and provides an overview of 12 major frameworks. A good starting point for choosing a lens.</p>
+                    </li>
+                    <li><strong class="label--read"><a href="../reading-crt.html" style="color: var(--c-read); text-decoration: underline; text-underline-offset: 3px;">Critical Race Theory (1970s&ndash;present)</a></strong>
+                        <p>An in-depth overview of CRT as a theoretical and interpretive framework, including its history, key scholars, common questions, important terms, and recommended sources for further research. Particularly relevant for this course. Originally from the Purdue OWL, adapted by Octaviano Gutierrez.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <hr class="article-divider">
+
+            <section class="article-section">
+                <h2 class="article-heading">External Resources</h2>
+
+                <ul class="article-bordered-list article-bordered-list--spaced">
+                    <li><strong class="label--watch"><a href="https://mseffie.com/assignments/heart_of_darkness/Purdue%20OWL%20Literary%20Theory.pdf" target="_blank" rel="noopener" style="color: var(--c-watch); text-decoration: underline; text-underline-offset: 3px;">Literary Theory Frameworks (PDF)</a></strong>
+                        <p>A detailed overview of major literary theory frameworks from the Purdue OWL. More depth than the course reading — useful for understanding a specific framework well enough to apply it. (external link)</p>
+                    </li>
+                    <li><strong class="label--watch"><a href="https://iep.utm.edu/literary/" target="_blank" rel="noopener" style="color: var(--c-watch); text-decoration: underline; text-underline-offset: 3px;">Internet Encyclopedia of Philosophy: Literary Theory</a></strong>
+                        <p>Peer-reviewed, open-access encyclopedia written by specialists for non-specialists. Has a dedicated literary theory entry plus individual entries on major thinkers. Citable as a scholarly source. (external link)</p>
+                    </li>
+                    <li><strong class="label--watch"><a href="https://human.libretexts.org/Bookshelves/Literature_and_Literacy/Literacy_and_Critical_Thinking/Creating_Literary_Analysis/" target="_blank" rel="noopener" style="color: var(--c-watch); text-decoration: underline; text-underline-offset: 3px;">LibreTexts: Creating Literary Analysis</a></strong>
+                        <p>OER textbook with chapters on specific frameworks (feminist, postcolonial, racial/ethnic, etc.). Written specifically for applying theory to literature. The postcolonial and racial/ethnic theory chapters are particularly relevant for this course. Citable. (external link)</p>
+                    </li>
+                    <li><strong class="label--watch"><a href="https://owl.purdue.edu/owl/subject_specific_writing/writing_in_literature/literary_theory_and_schools_of_criticism/index.html" target="_blank" rel="noopener" style="color: var(--c-watch); text-decoration: underline; text-underline-offset: 3px;">Purdue OWL: Literary Theory &amp; Schools of Criticism</a></strong>
+                        <p>Quick orientation to major frameworks. Good for getting a sense of what each theory is about, but too brief to use as your main source. Better as a &ldquo;start here, then go deeper&rdquo; resource. (external link)</p>
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="../footer.js"></script>
+    <script src="fp-nav.js"></script>
+    <script>
+    (function() {
+        const toggle = document.getElementById('article-theme-toggle');
+        if (!toggle) return;
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        const body = document.body;
+
+        if (localStorage.getItem('article-theme') === 'light') {
+            body.classList.add('light-mode');
+            icon.textContent = 'dark_mode';
+        }
+
+        toggle.addEventListener('click', function() {
+            body.classList.toggle('light-mode');
+            if (body.classList.contains('light-mode')) {
+                localStorage.setItem('article-theme', 'light');
+                icon.textContent = 'dark_mode';
+            } else {
+                localStorage.setItem('article-theme', 'dark');
+                icon.textContent = 'light_mode';
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

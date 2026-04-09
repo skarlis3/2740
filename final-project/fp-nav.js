@@ -17,6 +17,7 @@
             <a href="#" class="fp-nav-link placeholder" data-page="mla">MLA Citations</a>
             <a href="#" class="fp-nav-link placeholder" data-page="google-sites">Using Google Sites</a>
             <a href="/final-project/finding-sources.html" class="fp-nav-link" data-page="sources">Finding Sources</a>
+            <a href="/final-project/literary-theory-frameworks.html" class="fp-nav-link" data-page="theory">Literary Theory & Frameworks</a>
             <a href="/final-project/examples.html" class="fp-nav-link" data-page="examples">Examples</a>
         </nav>
     `;
