@@ -9,7 +9,7 @@
             <a href="/final-project/brainstorming-assignment.html" class="fp-nav-link" data-page="brainstorming">Brainstorming Assignment</a>
             <a href="/final-project/topic-proposal.html" class="fp-nav-link" data-page="proposal">Topic Proposal</a>
             <a href="/final-project/research-checkin.html" class="fp-nav-link" data-page="checkin">Research Check-In</a>
-            <a href="#" class="fp-nav-link placeholder" data-page="planning">Planning Assignment</a>
+            <a href="/final-project/site-organization-plan.html" class="fp-nav-link" data-page="planning">Site Organization Plan</a>
         </nav>
 
         <nav class="fp-nav-section" aria-label="Final Project resources">
