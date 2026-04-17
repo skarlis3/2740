@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Google Sites – ENGL 2740</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../articles.css">
+    <link rel="stylesheet" href="fp.css">
+</head>
+<body class="article-page">
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="simple-header">
+        <div class="logo"><a href="../index.html">ENGL 2740</a> / Final Project</div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <button class="article-theme-toggle" id="article-theme-toggle" title="Toggle Light/Dark Mode" aria-label="Toggle Theme">
+                <span class="material-symbols-outlined">light_mode</span>
+            </button>
+            <a href="../index.html" aria-label="Return to Index" class="close-btn">&times;</a>
+        </div>
+    </header>
+
+    <button class="fp-mobile-toggle" aria-expanded="false" aria-controls="fp-sidebar">Final Project Navigation</button>
+
+    <div class="fp-layout">
+        <aside class="fp-nav" id="fp-sidebar" aria-label="Final Project navigation"></aside>
+
+        <main id="main-content" class="fp-content">
+
+            <header class="article-header">
+                <h1 class="article-title">Using Google Sites</h1>
+                <p class="article-meta">A guide to building your final project site</p>
+            </header>
+
+            <!-- INTRO -->
+            <section class="article-section article-section--intro">
+                <div class="article-callout">
+                    <h2 class="article-callout-title article-callout-title--lg">What This Covers</h2>
+                    <p>This guide walks you through the basics of Google Sites &mdash; creating a site, adding pages, adding content, and publishing. You don&rsquo;t need any web design experience. If you can use Google Docs, you can use Google Sites.</p>
+                    <p>If you&rsquo;re using a different platform for your project, this page won&rsquo;t apply directly, but the general concepts (pages, navigation, embedding media) are similar across most website builders.</p>
+                </div>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- GETTING STARTED -->
+            <section class="article-section">
+                <h2 class="article-heading">Getting Started</h2>
+
+                <p><strong>Step 1:</strong> Go to <a href="https://sites.google.com" target="_blank" rel="noopener" style="color: var(--c-read); text-decoration: underline; text-underline-offset: 3px;">sites.google.com</a> and sign in with your Google account.</p>
+
+                <p><strong>Step 2:</strong> Click the <strong>+</strong> button (or <strong>Blank site</strong>) to create a new site. You can also choose a template, but a blank site gives you the most flexibility.</p>
+
+                <!-- Visual: Google Sites home -->
+                <div style="background: #f8f9fa; border: 1px solid #dadce0; border-radius: 8px; padding: 1.25rem; margin: 1rem 0; font-family: Arial, sans-serif; font-size: 0.85rem; color: #3c4043;" role="img" aria-label="Google Sites home screen showing a plus button to create a new blank site and template options below">
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                        <span style="font-size: 1.1rem; font-weight: 600; color: #1a73e8;">Google Sites</span>
+                    </div>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <div style="width: 100px; height: 75px; border: 2px dashed #1a73e8; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #1a73e8; cursor: pointer;">+</div>
+                        <div style="width: 100px; height: 75px; background: #e8f0fe; border: 1px solid #dadce0; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #5f6368;">Template 1</div>
+                        <div style="width: 100px; height: 75px; background: #fce8e6; border: 1px solid #dadce0; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #5f6368;">Template 2</div>
+                        <div style="width: 100px; height: 75px; background: #e6f4ea; border: 1px solid #dadce0; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: #5f6368;">Template 3</div>
+                    </div>
+                </div>
+
+                <p><strong>Step 3:</strong> Give your site a name. Click on <strong>&ldquo;Untitled site&rdquo;</strong> in the top-left corner and type your project title. This is what shows up in your browser tab and in the site&rsquo;s header.</p>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- THE EDITOR -->
+            <section class="article-section">
+                <h2 class="article-heading">The Editor</h2>
+
+                <p>Once you create your site, you&rsquo;ll be in the editor. Here&rsquo;s the general layout:</p>
+
+                <!-- Visual: Editor layout -->
+                <div style="background: #f8f9fa; border: 1px solid #dadce0; border-radius: 8px; overflow: hidden; margin: 1rem 0; font-family: Arial, sans-serif; font-size: 0.8rem; color: #3c4043;" role="img" aria-label="Google Sites editor layout: toolbar at top with Publish button, right sidebar with Insert/Pages/Themes tabs, and main canvas area in the center for editing your page content">
+                    <!-- Top bar -->
+                    <div style="display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 0.75rem; background: #fff; border-bottom: 1px solid #dadce0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #5f6368;">&#9776;</span>
+                            <span style="font-weight: 600; color: #3c4043;">Your Site Name</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span style="color: #5f6368;">&#9881;</span>
+                            <span style="color: #5f6368;">&#8942;</span>
+                            <span style="background: #4054b2; color: #fff; padding: 0.3rem 0.7rem; border-radius: 4px; font-weight: 600; font-size: 0.8rem;">Publish</span>
+                        </div>
+                    </div>
+                    <!-- Body -->
+                    <div style="display: flex; min-height: 200px;">
+                        <!-- Main canvas -->
+                        <div style="flex: 1; padding: 1.5rem; display: flex; align-items: center; justify-content: center; background: #e8eaed;">
+                            <div style="background: #fff; border: 1px solid #dadce0; border-radius: 4px; padding: 2rem; text-align: center; color: #80868b; width: 80%;">
+                                <p style="margin: 0 0 0.5rem; font-size: 1.1rem;">Your page content goes here</p>
+                                <p style="margin: 0; font-size: 0.75rem;">Click to add text, images, and other elements</p>
+                            </div>
+                        </div>
+                        <!-- Right sidebar -->
+                        <div style="width: 140px; background: #fff; border-left: 1px solid #dadce0; padding: 0.75rem;">
+                            <div style="display: flex; gap: 0; margin-bottom: 0.75rem; border-bottom: 1px solid #dadce0; padding-bottom: 0.5rem;">
+                                <span style="flex: 1; text-align: center; font-size: 0.7rem; font-weight: 600; color: #1a73e8; border-bottom: 2px solid #1a73e8; padding-bottom: 0.25rem;">Insert</span>
+                                <span style="flex: 1; text-align: center; font-size: 0.7rem; color: #5f6368; padding-bottom: 0.25rem;">Pages</span>
+                                <span style="flex: 1; text-align: center; font-size: 0.7rem; color: #5f6368; padding-bottom: 0.25rem;">Themes</span>
+                            </div>
+                            <div style="font-size: 0.7rem; color: #5f6368; line-height: 2;">
+                                <div>&#9783; Text box</div>
+                                <div>&#128444; Images</div>
+                                <div>&#9654; YouTube</div>
+                                <div>&#128196; From Drive</div>
+                                <div>&#8801; Layouts</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="article-bordered-list article-bordered-list--spaced">
+                    <li><strong class="label--read">Main canvas (center)</strong>
+                        <p>This is where you build your page. Click anywhere to add or edit content.</p>
+                    </li>
+                    <li class="border--watch"><strong class="label--watch">Right sidebar</strong>
+                        <p>This panel has three tabs: <strong>Insert</strong> (add content like text, images, videos), <strong>Pages</strong> (manage your site&rsquo;s pages), and <strong>Themes</strong> (change colors and fonts).</p>
+                    </li>
+                    <li class="border--alert"><strong class="label--alert">Top toolbar</strong>
+                        <p>Your site name, settings, and the <strong>Publish</strong> button live here.</p>
+                    </li>
+                </ul>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- ADDING PAGES -->
+            <section class="article-section">
+                <h2 class="article-heading">Adding Pages</h2>
+
+                <p>Your site will need multiple pages. Here&rsquo;s how to add them:</p>
+
+                <p><strong>Step 1:</strong> In the right sidebar, click the <strong>Pages</strong> tab.</p>
+
+                <p><strong>Step 2:</strong> Click the <strong>+</strong> button at the bottom of the pages list to add a new page.</p>
+
+                <!-- Visual: Pages panel -->
+                <div style="background: #fff; border: 1px solid #dadce0; border-radius: 8px; padding: 0.75rem; margin: 1rem 0; font-family: Arial, sans-serif; font-size: 0.8rem; color: #3c4043; max-width: 200px;" role="img" aria-label="Pages panel showing Home page, a Context page, and a Close Reading page, with a plus button at the bottom to add new pages">
+                    <div style="display: flex; gap: 0; margin-bottom: 0.5rem; border-bottom: 1px solid #dadce0; padding-bottom: 0.4rem;">
+                        <span style="flex: 1; text-align: center; font-size: 0.7rem; color: #5f6368;">Insert</span>
+                        <span style="flex: 1; text-align: center; font-size: 0.7rem; font-weight: 600; color: #1a73e8; border-bottom: 2px solid #1a73e8;">Pages</span>
+                        <span style="flex: 1; text-align: center; font-size: 0.7rem; color: #5f6368;">Themes</span>
+                    </div>
+                    <div style="line-height: 2.2; font-size: 0.8rem;">
+                        <div style="padding: 0.15rem 0.4rem; background: #e8f0fe; border-radius: 3px; font-weight: 600;">&#128196; Home</div>
+                        <div style="padding: 0.15rem 0.4rem;">&#128196; Context</div>
+                        <div style="padding: 0.15rem 0.4rem;">&#128196; Close Reading</div>
+                    </div>
+                    <div style="margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px solid #dadce0; text-align: center;">
+                        <span style="display: inline-block; width: 28px; height: 28px; border: 2px dashed #1a73e8; border-radius: 50%; line-height: 24px; text-align: center; color: #1a73e8; font-size: 1.1rem;">+</span>
+                    </div>
+                </div>
+
+                <p><strong>Step 3:</strong> Name the page and click <strong>Done</strong>. Your new page will automatically show up in your site&rsquo;s navigation menu.</p>
+
+                <div class="article-callout">
+                    <h2 class="article-callout-title">Navigation is automatic</h2>
+                    <p>Google Sites automatically creates a navigation menu based on your pages. You can reorder pages by dragging them in the Pages panel. The order in the panel is the order in the nav menu.</p>
+                </div>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- ADDING TEXT -->
+            <section class="article-section">
+                <h2 class="article-heading">Adding Text</h2>
+
+                <p><strong>Option 1:</strong> Double-click anywhere on the canvas to start typing. A text box will appear.</p>
+
+                <p><strong>Option 2:</strong> In the right sidebar under <strong>Insert</strong>, click <strong>Text box</strong> to place a text block on the page.</p>
+
+                <p>Once you&rsquo;re typing, a formatting toolbar appears above the text box with options for headings, bold, italic, links, lists, and alignment &mdash; similar to Google Docs.</p>
+
+                <!-- Visual: Text formatting toolbar -->
+                <div style="background: #fff; border: 1px solid #dadce0; border-radius: 6px; padding: 0.5rem 0.75rem; margin: 1rem 0; font-family: Arial, sans-serif; font-size: 0.8rem; display: flex; align-items: center; gap: 0.75rem; max-width: 420px; color: #3c4043;" role="img" aria-label="Text formatting toolbar with options for heading style, bold, italic, underline, link, alignment, and lists">
+                    <span style="border: 1px solid #dadce0; border-radius: 3px; padding: 0.2rem 0.5rem; font-size: 0.75rem;">Normal text &#9662;</span>
+                    <span style="font-weight: 700;">B</span>
+                    <span style="font-style: italic;">I</span>
+                    <span style="text-decoration: underline;">U</span>
+                    <span>&#128279;</span>
+                    <span style="color: #dadce0;">|</span>
+                    <span>&#9776;</span>
+                    <span>&#8801;</span>
+                    <span style="color: #dadce0;">|</span>
+                    <span>&#8226; List</span>
+                    <span>1. List</span>
+                </div>
+
+                <div class="article-callout">
+                    <h2 class="article-callout-title">Tips for text</h2>
+                    <ul>
+                        <li>Use <strong>headings</strong> (Title, Heading, Subheading) to organize your content &mdash; don&rsquo;t just make text bigger and bold.</li>
+                        <li>Keep paragraphs relatively short. Websites are not essays &mdash; readers scan more than they read linearly.</li>
+                        <li>Use the <strong>link tool</strong> (chain icon) to link between your own pages or to external sources.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- ADDING IMAGES -->
+            <section class="article-section">
+                <h2 class="article-heading">Adding Images</h2>
+
+                <p>In the right sidebar under <strong>Insert</strong>, click <strong>Images</strong>. You can:</p>
+
+                <ul class="article-bordered-list article-bordered-list--spaced">
+                    <li><strong class="label--read">Upload</strong>
+                        <p>Upload an image from your computer.</p>
+                    </li>
+                    <li class="border--watch"><strong class="label--watch">By URL</strong>
+                        <p>Paste the URL of an image from the web. Make sure you have the right to use it (Library of Congress, Wikimedia Commons, and other public domain sources are good options).</p>
+                    </li>
+                    <li class="border--alert"><strong class="label--alert">Google Drive</strong>
+                        <p>Insert an image from your Google Drive.</p>
+                    </li>
+                </ul>
+
+                <p>Once the image is placed, click on it to resize, crop, or add <strong>alt text</strong> (a description for screen readers &mdash; please add this for accessibility).</p>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- ADDING YOUTUBE VIDEOS -->
+            <section class="article-section">
+                <h2 class="article-heading">Adding YouTube Videos</h2>
+
+                <p><strong>Step 1:</strong> In the right sidebar under <strong>Insert</strong>, click <strong>YouTube</strong>.</p>
+
+                <p><strong>Step 2:</strong> Search for the video or paste a YouTube URL.</p>
+
+                <p><strong>Step 3:</strong> Select the video and click <strong>Insert</strong>. The video will embed directly on your page &mdash; visitors can watch it without leaving your site.</p>
+
+                <div class="article-callout">
+                    <h2 class="article-callout-title">Other embeds</h2>
+                    <p>You can also embed Google Docs, Slides, Maps, and other content using the Insert panel. The <strong>Embed</strong> option (under Insert &rarr; Embed) lets you paste embed codes from other sites too.</p>
+                </div>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- SECTIONS AND LAYOUTS -->
+            <section class="article-section">
+                <h2 class="article-heading">Sections &amp; Layouts</h2>
+
+                <p>Google Sites organizes content in <strong>sections</strong> &mdash; horizontal blocks that span the full width of the page. Each section can have its own layout (one column, two columns, etc.) and background color.</p>
+
+                <p>To add a new section, scroll to the bottom of your page and click <strong>the layout options</strong> that appear, or use <strong>Insert &rarr; Layouts</strong> from the sidebar.</p>
+
+                <!-- Visual: Layout options -->
+                <div style="background: #f8f9fa; border: 1px solid #dadce0; border-radius: 8px; padding: 1rem; margin: 1rem 0; font-family: Arial, sans-serif; font-size: 0.75rem; color: #5f6368;" role="img" aria-label="Layout options showing one-column, two-column, and three-column arrangements">
+                    <p style="margin: 0 0 0.5rem; font-weight: 600; color: #3c4043; font-size: 0.8rem;">Choose a layout:</p>
+                    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                        <div style="width: 80px; height: 50px; border: 2px solid #1a73e8; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                            <div style="width: 60px; height: 35px; background: #c8d7f5; border-radius: 2px;"></div>
+                        </div>
+                        <div style="width: 80px; height: 50px; border: 1px solid #dadce0; border-radius: 4px; display: flex; align-items: center; justify-content: center; gap: 3px;">
+                            <div style="width: 28px; height: 35px; background: #e8eaed; border-radius: 2px;"></div>
+                            <div style="width: 28px; height: 35px; background: #e8eaed; border-radius: 2px;"></div>
+                        </div>
+                        <div style="width: 80px; height: 50px; border: 1px solid #dadce0; border-radius: 4px; display: flex; align-items: center; justify-content: center; gap: 3px;">
+                            <div style="width: 18px; height: 35px; background: #e8eaed; border-radius: 2px;"></div>
+                            <div style="width: 18px; height: 35px; background: #e8eaed; border-radius: 2px;"></div>
+                            <div style="width: 18px; height: 35px; background: #e8eaed; border-radius: 2px;"></div>
+                        </div>
+                        <div style="width: 80px; height: 50px; border: 1px solid #dadce0; border-radius: 4px; display: flex; align-items: center; justify-content: center; gap: 3px;">
+                            <div style="width: 20px; height: 35px; background: #e8eaed; border-radius: 2px;"></div>
+                            <div style="width: 38px; height: 35px; background: #e8eaed; border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>Sections are useful for organizing content visually &mdash; for example, you might have a section with text on the left and an image on the right, or a full-width section for a video.</p>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- THEMES -->
+            <section class="article-section">
+                <h2 class="article-heading">Changing the Look</h2>
+
+                <p>Click the <strong>Themes</strong> tab in the right sidebar to change your site&rsquo;s color scheme and fonts. Pick something that fits your project&rsquo;s tone &mdash; but prioritize readability over style. Make sure text is easy to read against the background.</p>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- PUBLISHING -->
+            <section class="article-section">
+                <h2 class="article-heading">Publishing &amp; Sharing Your Site</h2>
+
+                <p>When your site is ready to share, you need to publish it. <strong>Your site is not visible to anyone until you publish.</strong></p>
+
+                <h3>How to Publish</h3>
+
+                <p><strong>Step 1:</strong> Click the <strong>Publish</strong> button in the top-right corner of the editor.</p>
+
+                <!-- Visual: Publish button -->
+                <div style="background: #f8f9fa; border: 1px solid #dadce0; border-radius: 8px; padding: 0.5rem 0.75rem; display: flex; align-items: center; justify-content: flex-end; gap: 0.6rem; max-width: 380px; margin: 1rem 0; font-family: Arial, sans-serif; font-size: 0.85rem;" role="img" aria-label="Top toolbar showing gear icon, three-dot menu, and Publish button highlighted">
+                    <span style="color: #5f6368; margin-right: auto;">Google Sites editor</span>
+                    <span style="color: #5f6368; font-size: 1.1rem;" aria-hidden="true">&#9881;</span>
+                    <span style="color: #5f6368; font-size: 1rem; letter-spacing: .15em;" aria-hidden="true">&#8942;</span>
+                    <span style="background: #4054b2; color: #fff; padding: .35rem .85rem; border-radius: 4px; font-weight: 600; outline: 3px solid #f4a261; outline-offset: 2px;">Publish</span>
+                </div>
+
+                <p><strong>Step 2:</strong> Under <em>&ldquo;Who can visit your published site,&rdquo;</em> select <strong>Not listed</strong>. Do not choose &ldquo;Public&rdquo; or &ldquo;Restricted&rdquo; &mdash; &ldquo;Not listed&rdquo; means anyone with the link can view it, but it won&rsquo;t appear in search results.</p>
+
+                <p><strong>Step 3:</strong> Click <strong>Publish</strong>.</p>
+
+                <h3>Getting the Right Link</h3>
+
+                <p><strong>Step 4:</strong> After publishing, click the <strong>small dropdown arrow</strong> next to the Publish button and select <strong>View published site</strong>. Copy the URL from your browser&rsquo;s address bar.</p>
+
+                <!-- Visual: Publish dropdown -->
+                <div style="background: #f8f9fa; border: 1px solid #dadce0; border-radius: 8px; padding: 0.5rem 0.75rem; display: flex; align-items: center; justify-content: flex-end; gap: 0.6rem; max-width: 380px; margin: 1rem 0; font-family: Arial, sans-serif; font-size: 0.85rem;" role="img" aria-label="Publish button with dropdown arrow highlighted, which reveals View published site option">
+                    <span style="color: #5f6368; margin-right: auto;">Google Sites editor</span>
+                    <span style="color: #5f6368; font-size: 1.1rem;" aria-hidden="true">&#9881;</span>
+                    <span style="color: #5f6368; font-size: 1rem; letter-spacing: .15em;" aria-hidden="true">&#8942;</span>
+                    <span style="display: inline-flex; border-radius: 4px; overflow: hidden;">
+                        <span style="background: #4054b2; color: #fff; padding: .35rem .75rem; font-weight: 600;">Publish</span>
+                        <span style="background: #374da0; color: #fff; padding: .35rem .4rem; border-left: 1px solid rgba(255,255,255,.3); outline: 3px solid #f4a261; outline-offset: 2px;">&#9662;</span>
+                    </span>
+                </div>
+
+                <div class="article-callout article-callout--accent">
+                    <h2 class="article-callout-title article-callout-title--accent">Make Sure You Have the Right Link</h2>
+                    <p>The <strong>published</strong> URL looks like:<br><code style="background: rgba(255,255,255,0.1); padding: 0.15rem 0.4rem; border-radius: 3px;">sites.google.com/view/your-site-name</code></p>
+                    <p>If the URL contains <code style="background: rgba(255,255,255,0.1); padding: 0.15rem 0.4rem; border-radius: 3px;">/edit</code> or <code style="background: rgba(255,255,255,0.1); padding: 0.15rem 0.4rem; border-radius: 3px;">/d/</code>, you are looking at the editing link, not the published site. I will not be able to view your site with the editing link. Go back and copy the URL from the published view instead.</p>
+                </div>
+
+                <p>Submit this link in Canvas when your project is due. Your site must stay live through the end of the semester.</p>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- TIPS -->
+            <section class="article-section">
+                <h2 class="article-heading">General Tips</h2>
+                <ul class="article-bordered-list article-bordered-list--spaced">
+                    <li><strong class="label--read">Save is automatic</strong>
+                        <p>Google Sites saves your work as you go, just like Google Docs. You don&rsquo;t need to manually save.</p>
+                    </li>
+                    <li class="border--watch"><strong class="label--watch">Preview before publishing</strong>
+                        <p>Click the eye icon (&#128065;) in the top toolbar to preview how your site will look to visitors. Check it on both desktop and mobile views.</p>
+                    </li>
+                    <li class="border--alert"><strong class="label--alert">You can republish anytime</strong>
+                        <p>After your first publish, any changes you make in the editor won&rsquo;t go live until you click Publish again. This means you can keep editing without visitors seeing unfinished work.</p>
+                    </li>
+                    <li><strong class="label--read">Keep it readable</strong>
+                        <p>Choose a clean theme, use headings to organize your content, and don&rsquo;t overcrowd pages. Your classmates will be exploring these on presentation day &mdash; make it easy for them.</p>
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="../footer.js"></script>
+    <script src="fp-nav.js"></script>
+    <script>
+    (function() {
+        const toggle = document.getElementById('article-theme-toggle');
+        if (!toggle) return;
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        const body = document.body;
+
+        if (localStorage.getItem('article-theme') === 'light') {
+            body.classList.add('light-mode');
+            icon.textContent = 'dark_mode';
+        }
+
+        toggle.addEventListener('click', function() {
+            body.classList.toggle('light-mode');
+            if (body.classList.contains('light-mode')) {
+                localStorage.setItem('article-theme', 'light');
+                icon.textContent = 'dark_mode';
+            } else {
+                localStorage.setItem('article-theme', 'dark');
+                icon.textContent = 'light_mode';
+            }
+        });
+    })();
+    </script>
+</body>
+</html>
