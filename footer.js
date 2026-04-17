@@ -35,6 +35,14 @@
     `;
     document.head.appendChild(style);
 
+    // Determine if this is a final project page
+    const isFinalProject = !!document.querySelector('.fp-layout') || window.location.pathname.includes('/final-project');
+
+    // AI statement varies by section
+    const aiStatement = isFinalProject
+        ? '<p>AI tools were used in the design and coding of this site and may have been used for proofreading, brainstorming, or refining assignment pages.</p>'
+        : '<p>AI tools were used in the design and coding of this site.</p>';
+
     // Create footer element
     const footer = document.createElement('footer');
     footer.className = 'site-footer';
@@ -43,6 +51,7 @@
         <div class="footer-license">
             <p>All readings and primary texts on this site are in the public domain unless otherwise noted.</p>
             <p>Website design and original page content created by Sarah Karlis and licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Attribution 4.0 International License</a>.</p>
+            ${aiStatement}
         </div>
     `;
 
