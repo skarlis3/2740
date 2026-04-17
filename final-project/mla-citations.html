@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../articles.css">
     <link rel="stylesheet" href="fp.css">
+    <style>
+        .fp-content details { background: var(--article-callout-bg); border: 1px solid var(--article-callout-border); border-radius: 8px; margin: 0.75rem 0; }
+        .fp-content details summary { padding: 0.75rem 1rem; font-weight: 600; font-size: 1rem; cursor: pointer; list-style: none; color: var(--text-main); }
+        .fp-content details summary::-webkit-details-marker { display: none; }
+        .fp-content details summary::before { content: "\25B6"; display: inline-block; margin-right: 0.5rem; font-size: 0.7rem; transition: transform 0.2s ease; }
+        .fp-content details[open] summary::before { transform: rotate(90deg); }
+        .fp-content details .details-content { padding: 0 1rem 1rem; }
+        .fp-content details .details-content ul { padding-left: 1.25rem; }
+    </style>
 </head>
 <body class="article-page">
 
@@ -31,14 +40,14 @@
 
             <header class="article-header">
                 <h1 class="article-title">MLA Citations</h1>
-                <p class="article-meta">In-text citations, Works Cited, and a ready-to-use list of class readings</p>
+                <p class="article-meta">Works Cited, in-text citations, and crediting sources on your site</p>
             </header>
 
             <!-- INTRO -->
             <section class="article-section article-section--intro">
                 <div class="article-callout">
                     <h2 class="article-callout-title article-callout-title--lg">What This Covers</h2>
-                    <p>This page covers the basics of MLA citation for your final project: how to do in-text citations, how to set up a Works Cited page, and a <a href="#class-readings" style="color: var(--c-read); text-decoration: underline; text-underline-offset: 3px;">ready-to-use Works Cited list</a> of all the course readings you can copy from directly.</p>
+                    <p>This page covers how to handle citations in your final project: what goes in your Works Cited, when you need formal in-text citations, how to credit multimedia on your site, and a <a href="#class-readings" style="color: var(--c-read); text-decoration: underline; text-underline-offset: 3px;">ready-to-use Works Cited list</a> of all the course readings you can copy from directly.</p>
                 </div>
 
                 <a href="#class-readings" style="display: inline-block; margin-top: 1rem; padding: 0.6rem 1.25rem; background: #2f5bb5; color: #fff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 0.95rem; border: 2px solid #5a8ae0;">Skip to Class Readings Works Cited List &darr;</a>
@@ -46,61 +55,11 @@
 
             <hr class="article-divider">
 
-            <!-- IN-TEXT CITATIONS -->
-            <section class="article-section">
-                <h2 class="article-heading">In-Text Citations</h2>
-
-                <p>Every time you quote, paraphrase, or reference a source in your writing, include a brief in-text citation so readers know where the information comes from. In MLA, in-text citations go in parentheses at the end of the sentence, before the period.</p>
-
-                <h3>The Basics</h3>
-                <p>An MLA in-text citation typically includes the <strong>author&rsquo;s last name</strong> and the <strong>page number</strong> (if available). No comma between them.</p>
-
-                <div class="article-callout" style="margin: 1rem 0;">
-                    <p style="margin-bottom: 0.5rem;"><strong>Quoting:</strong></p>
-                    <p style="margin-bottom: 1rem;">Douglass writes, &ldquo;You have seen how a man was made a slave; you shall see how a slave was made a man&rdquo; (39).</p>
-
-                    <p style="margin-bottom: 0.5rem;"><strong>Paraphrasing:</strong></p>
-                    <p style="margin-bottom: 0;">Douglass describes his fight with Covey as the turning point that restored his sense of humanity (39).</p>
-                </div>
-
-                <h3>When You Name the Author in the Sentence</h3>
-                <p>If you mention the author&rsquo;s name in your sentence, you only need the page number in parentheses.</p>
-
-                <div class="article-callout" style="margin: 1rem 0;">
-                    <p style="margin-bottom: 0;">According to Douglass, the fight with Covey was &ldquo;the turning-point in my career as a slave&rdquo; (39).</p>
-                </div>
-
-                <h3>No Page Numbers</h3>
-                <p>Many of the sources you&rsquo;ll use (websites, videos, poems, public domain texts on our class site) don&rsquo;t have page numbers. In that case, just use the author&rsquo;s name. If you&rsquo;ve already named them in the sentence, you don&rsquo;t need a parenthetical citation at all.</p>
-
-                <div class="article-callout" style="margin: 1rem 0;">
-                    <p style="margin-bottom: 0.5rem;">Hughes writes, &ldquo;I, too, sing America&rdquo; (Hughes).</p>
-                    <p style="margin-bottom: 0;"><em>Or, if the author is already named:</em> Hughes opens the poem with &ldquo;I, too, sing America.&rdquo;</p>
-                </div>
-
-                <h3>Poems</h3>
-                <p>For poems, use line numbers instead of page numbers. Use the word &ldquo;line&rdquo; or &ldquo;lines&rdquo; the first time, then just the numbers after that.</p>
-
-                <div class="article-callout" style="margin: 1rem 0;">
-                    <p style="margin-bottom: 0.5rem;">Cullen asks, &ldquo;What is Africa to me&rdquo; (line 1).</p>
-                    <p style="margin-bottom: 0;">Later in the poem, the speaker describes &ldquo;the survey of all time&rdquo; (10).</p>
-                </div>
-
-                <h3>Videos and Films</h3>
-                <p>Cite by the title (shortened if needed) since there&rsquo;s usually no single author.</p>
-
-                <div class="article-callout" style="margin: 1rem 0;">
-                    <p style="margin-bottom: 0;">The documentary explores how the show became &ldquo;a platform for political expression and the fight for social justice&rdquo; (<em>Mr. SOUL!</em>).</p>
-                </div>
-            </section>
-
-            <hr class="article-divider">
-
             <!-- WORKS CITED PAGE -->
             <section class="article-section">
-                <h2 class="article-heading">Works Cited Page</h2>
+                <h2 class="article-heading">Works Cited</h2>
 
-                <p>Your Works Cited page goes at the end of your project (or as its own page on your site). It lists every source you referenced, in alphabetical order by the first word of the entry (usually the author&rsquo;s last name).</p>
+                <p>Your Works Cited page lists <strong>every source</strong> you used in your project &mdash; readings you analyzed, scholarly sources, videos you embedded, images you included, everything. This is true for multimodal projects just like it is for essays. Even if a video is embedded right there on your page, it still needs an entry in your Works Cited.</p>
 
                 <h3>Formatting</h3>
                 <ul class="article-bordered-list article-bordered-list--spaced">
@@ -117,58 +76,147 @@
                         <p>For any online source, include a working URL at the end of the entry. Since this is a website project, your readers should be able to click through to verify your sources.</p>
                     </li>
                 </ul>
+
+                <details>
+                    <summary>Examples by Source Type</summary>
+                    <div class="details-content">
+
+                        <h3>Book</h3>
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;">Forna, Namina. <em>The Gilded Ones</em>. Delacorte Press, 2021.</p>
+                        </div>
+
+                        <h3>Public Domain Book (accessed on our class site)</h3>
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;">Douglass, Frederick. <em>Narrative of the Life of Frederick Douglass, an American Slave</em>. 1845. <em>ENGL 2740 Course Site</em>, 2740.skarlis.org/reading-douglass-1.html.</p>
+                        </div>
+
+                        <h3>Poem (accessed on our class site)</h3>
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;">Hughes, Langston. &ldquo;I, Too.&rdquo; 1926. <em>ENGL 2740 Course Site</em>, 2740.skarlis.org/reading-hughes-too.html.</p>
+                        </div>
+
+                        <h3>Poem (from Poetry Foundation)</h3>
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;">Angelou, Maya. &ldquo;Still I Rise.&rdquo; <em>Poetry Foundation</em>, www.poetryfoundation.org/poems/46446/still-i-rise.</p>
+                        </div>
+
+                        <h3>YouTube Video</h3>
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;">&ldquo;The History of African American Literature.&rdquo; YouTube, uploaded by CrashCourse, 14 Nov. 2019, www.youtube.com/watch?v=example.</p>
+                        </div>
+
+                        <h3>Film / Documentary</h3>
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;"><em>Mr. SOUL!</em>. Directed by Sam Pollard and Melissa Haizlip, produced by Melissa Haizlip and Shoes in the Bed Productions, Film Platform, 2018. Alexander Street, video.alexanderstreet.com/watch/mr-soul.</p>
+                        </div>
+
+                        <h3>Scholarly Journal Article</h3>
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;">Spillers, Hortense. &ldquo;Mama&rsquo;s Baby, Papa&rsquo;s Maybe: An American Grammar Book.&rdquo; <em>Diacritics</em>, vol. 17, no. 2, 1987, pp. 64&ndash;81.</p>
+                        </div>
+
+                        <h3>Artwork / Image</h3>
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;">Lawrence, Jacob. <em>The Migration Series, Panel 1</em>. 1940&ndash;41. Museum of Modern Art, New York.</p>
+                        </div>
+
+                        <h3>Comic Book</h3>
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;">Ewing, Eve L. <em>Ironheart</em>, vol. 1, no. 1, Marvel Comics, Nov. 2018.</p>
+                        </div>
+
+                    </div>
+                </details>
             </section>
 
             <hr class="article-divider">
 
-            <!-- EXAMPLES BY TYPE -->
+            <!-- CITING ON YOUR SITE -->
             <section class="article-section">
-                <h2 class="article-heading">Examples by Source Type</h2>
+                <h2 class="article-heading">Citing Sources on Your Site</h2>
 
-                <h3>Book</h3>
-                <div class="article-callout" style="margin: 0.75rem 0;">
-                    <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;">Forna, Namina. <em>The Gilded Ones</em>. Delacorte Press, 2021.</p>
-                </div>
+                <p>Since your final project is a website &mdash; not a traditional essay &mdash; how you reference sources depends on <em>how</em> you&rsquo;re using them. The key principle is <strong>findability</strong>: it should always be clear what you&rsquo;re discussing, and a reader should be able to connect anything on your site back to an entry on your Works Cited page.</p>
 
-                <h3>Public Domain Book (accessed on our class site)</h3>
-                <div class="article-callout" style="margin: 0.75rem 0;">
-                    <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;">Douglass, Frederick. <em>Narrative of the Life of Frederick Douglass, an American Slave</em>. 1845. <em>ENGL 2740 Course Site</em>, 2740.skarlis.org/reading-douglass-1.html.</p>
-                </div>
+                <details>
+                    <summary>When to Use Formal In-Text Citations</summary>
+                    <div class="details-content">
+                        <p>Use formal MLA in-text citations when you are <strong>quoting, paraphrasing, or referencing specific claims</strong> from a source in your own analytical writing &mdash; the same situations where you&rsquo;d cite in an essay.</p>
 
-                <h3>Poem (accessed on our class site)</h3>
-                <div class="article-callout" style="margin: 0.75rem 0;">
-                    <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;">Hughes, Langston. &ldquo;I, Too.&rdquo; 1926. <em>ENGL 2740 Course Site</em>, 2740.skarlis.org/reading-hughes-too.html.</p>
-                </div>
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0.5rem;"><strong>Quoting:</strong></p>
+                            <p style="margin-bottom: 1rem;">Douglass writes, &ldquo;You have seen how a man was made a slave; you shall see how a slave was made a man&rdquo; (39).</p>
 
-                <h3>Poem (from Poetry Foundation)</h3>
-                <div class="article-callout" style="margin: 0.75rem 0;">
-                    <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;">Angelou, Maya. &ldquo;Still I Rise.&rdquo; <em>Poetry Foundation</em>, www.poetryfoundation.org/poems/46446/still-i-rise.</p>
-                </div>
+                            <p style="margin-bottom: 0.5rem;"><strong>Paraphrasing:</strong></p>
+                            <p style="margin-bottom: 0;">Douglass describes his fight with Covey as the turning point that restored his sense of humanity (39).</p>
+                        </div>
 
-                <h3>YouTube Video</h3>
-                <div class="article-callout" style="margin: 0.75rem 0;">
-                    <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;">&ldquo;The History of African American Literature.&rdquo; YouTube, uploaded by CrashCourse, 14 Nov. 2019, www.youtube.com/watch?v=example.</p>
-                </div>
+                        <p>This applies to your close reading section and any other writing where you&rsquo;re making analytical claims supported by evidence from sources.</p>
+                    </div>
+                </details>
 
-                <h3>Film / Documentary</h3>
-                <div class="article-callout" style="margin: 0.75rem 0;">
-                    <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;"><em>Mr. SOUL!</em>. Directed by Sam Pollard and Melissa Haizlip, produced by Melissa Haizlip and Shoes in the Bed Productions, Film Platform, 2018. Alexander Street, video.alexanderstreet.com/watch/mr-soul.</p>
-                </div>
+                <details>
+                    <summary>When Informal Credit Is Enough</summary>
+                    <div class="details-content">
+                        <p>When you&rsquo;re presenting multimedia on your site &mdash; an embedded video, an image, a link to an external resource &mdash; you don&rsquo;t need a formal parenthetical citation. But you do need to make it clear <strong>what it is and who made it</strong> so that a reader can find it on your Works Cited page.</p>
 
-                <h3>Scholarly Journal Article</h3>
-                <div class="article-callout" style="margin: 0.75rem 0;">
-                    <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;">Spillers, Hortense. &ldquo;Mama&rsquo;s Baby, Papa&rsquo;s Maybe: An American Grammar Book.&rdquo; <em>Diacritics</em>, vol. 17, no. 2, 1987, pp. 64&ndash;81.</p>
-                </div>
+                        <p>Think of it this way: if the link broke tomorrow, could I still figure out what you were showing me and find it myself? If yes, your credit is sufficient.</p>
 
-                <h3>Artwork / Image</h3>
-                <div class="article-callout" style="margin: 0.75rem 0;">
-                    <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;">Lawrence, Jacob. <em>The Migration Series, Panel 1</em>. 1940&ndash;41. Museum of Modern Art, New York.</p>
-                </div>
+                        <p><strong>For a YouTube video you&rsquo;ve embedded:</strong> mention the title and/or the creator when you introduce or discuss it.</p>
 
-                <h3>Comic Book</h3>
-                <div class="article-callout" style="margin: 0.75rem 0;">
-                    <p style="margin-bottom: 0; padding-left: 2rem; text-indent: -2rem;">Ewing, Eve L. <em>Ironheart</em>, vol. 1, no. 1, Marvel Comics, Nov. 2018.</p>
-                </div>
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0;">In the documentary <em>Mr. SOUL!</em>, directed by Melissa Haizlip, the show is described as a platform for political expression and cultural celebration.</p>
+                        </div>
+
+                        <p><strong>For an image:</strong> include a caption or nearby text that identifies the artist/photographer, the title (if it has one), and where it came from.</p>
+
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0;">Jacob Lawrence, <em>The Migration Series, Panel 1</em> (1940&ndash;41). Museum of Modern Art.</p>
+                        </div>
+
+                        <p><strong>For a link to an external source:</strong> use the title or author&rsquo;s name in your text so it&rsquo;s clear what you&rsquo;re linking to.</p>
+
+                        <p>The point isn&rsquo;t to be formal &mdash; it&rsquo;s to be <strong>clear</strong>. A reader should always know what they&rsquo;re looking at and be able to match it to your Works Cited.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>In-Text Citation Basics (How-To)</summary>
+                    <div class="details-content">
+                        <p>When you do need a formal in-text citation, here&rsquo;s how MLA format works:</p>
+
+                        <h3>Author + Page Number</h3>
+                        <p>Include the author&rsquo;s last name and page number in parentheses. No comma between them.</p>
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0;">Jacobs describes the constant fear of discovery during her years in hiding (148).</p>
+                        </div>
+
+                        <h3>Author Already Named</h3>
+                        <p>If you name the author in your sentence, just put the page number in parentheses.</p>
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0;">According to Douglass, the fight with Covey was &ldquo;the turning-point in my career as a slave&rdquo; (39).</p>
+                        </div>
+
+                        <h3>No Page Numbers</h3>
+                        <p>Many sources (websites, videos, public domain texts on our class site) don&rsquo;t have page numbers. Just use the author&rsquo;s name. If you&rsquo;ve already named them in the sentence, you don&rsquo;t need a parenthetical at all.</p>
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0;">Hughes opens the poem with &ldquo;I, too, sing America.&rdquo;</p>
+                        </div>
+
+                        <h3>Poems</h3>
+                        <p>Use line numbers instead of page numbers. Write &ldquo;line&rdquo; or &ldquo;lines&rdquo; the first time, then just the numbers after that.</p>
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0.5rem;">Cullen asks, &ldquo;What is Africa to me&rdquo; (line 1).</p>
+                            <p style="margin-bottom: 0;">Later, the speaker describes &ldquo;the survey of all time&rdquo; (10).</p>
+                        </div>
+
+                        <h3>Videos and Films</h3>
+                        <p>Cite by the title (shortened if needed).</p>
+                        <div class="article-callout" style="margin: 0.75rem 0;">
+                            <p style="margin-bottom: 0;">The documentary explores how the show became &ldquo;a platform for political expression and the fight for social justice&rdquo; (<em>Mr. SOUL!</em>).</p>
+                        </div>
+                    </div>
+                </details>
             </section>
 
             <hr class="article-divider">
