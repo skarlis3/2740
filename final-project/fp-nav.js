@@ -18,6 +18,7 @@
             <a href="/final-project/google-sites.html" class="fp-nav-link" data-page="google-sites">Using Google Sites</a>
             <a href="/final-project/finding-sources.html" class="fp-nav-link" data-page="sources">Finding Sources</a>
             <a href="/final-project/literary-theory-frameworks.html" class="fp-nav-link" data-page="theory">Literary Theory & Frameworks</a>
+            <a href="/final-project/close-reading-and-research.html" class="fp-nav-link" data-page="close-reading-research">Close Reading &amp; Research</a>
             <a href="/final-project/examples.html" class="fp-nav-link" data-page="examples">Examples</a>
         </nav>
     `;

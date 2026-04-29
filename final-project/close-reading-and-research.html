@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Close Reading, Analysis &amp; Research – ENGL 2740</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../articles.css">
+    <link rel="stylesheet" href="fp.css">
+</head>
+<body class="article-page">
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="simple-header">
+        <div class="logo"><a href="../index.html">ENGL 2740</a> / Final Project</div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <button class="article-theme-toggle" id="article-theme-toggle" title="Toggle Light/Dark Mode" aria-label="Toggle Theme">
+                <span class="material-symbols-outlined">light_mode</span>
+            </button>
+            <a href="../index.html" aria-label="Return to Index" class="close-btn">&times;</a>
+        </div>
+    </header>
+
+    <button class="fp-mobile-toggle" aria-expanded="false" aria-controls="fp-sidebar">Final Project Navigation</button>
+
+    <div class="fp-layout">
+        <aside class="fp-nav" id="fp-sidebar" aria-label="Final Project navigation"></aside>
+
+        <main id="main-content" class="fp-content">
+
+            <header class="article-header">
+                <h1 class="article-title">Close Reading, Analysis &amp; Scholarly Research</h1>
+                <p class="article-meta">Two ways to bring lens, research, and close reading together</p>
+            </header>
+
+            <!-- INTRO -->
+            <section class="article-section article-section--intro">
+                <div class="article-callout">
+                    <h2 class="article-callout-title article-callout-title--lg">Three Things to Bring Together</h2>
+                    <p>You have three things to bring together in your final project: a <strong>critical lens</strong>, <strong>scholarly research</strong>, and <strong>close reading</strong>. There are two ways you can structure how they fit together &mdash; pick whichever works better for your project.</p>
+                </div>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- OPTION 1 -->
+            <section class="article-section">
+                <h2 class="article-heading">Option 1: Lens as a Dedicated Page</h2>
+
+                <p>Make a page on your site that introduces the critical lens you're using (feminism, new historicism, etc.). On this page:</p>
+
+                <ul class="article-bordered-list article-bordered-list--spaced">
+                    <li><strong class="label--read">Explain what the lens is</strong>
+                        <p>Define the framework and the kinds of questions it asks.</p>
+                    </li>
+                    <li class="border--watch"><strong class="label--watch">Cite scholarly sources that back up your explanation</strong>
+                        <p>Foundational thinkers, key concepts, or current scholarship in that tradition.</p>
+                    </li>
+                    <li class="border--alert"><strong class="label--alert">Say briefly why this lens fits your text or topic</strong>
+                        <p>What does this framework let you see in your reading that another lens wouldn't?</p>
+                    </li>
+                </ul>
+
+                <p>Your close reading then lives on its own page (or pages) and uses the lens. You can refer back to ideas from the lens page without explaining them again.</p>
+            </section>
+
+            <hr class="article-divider">
+
+            <!-- OPTION 2 -->
+            <section class="article-section">
+                <h2 class="article-heading">Option 2: Mix Research Into Your Close Reading</h2>
+
+                <p>Bring scholarly sources right into your close reading as you go. Instead of explaining the lens upfront, you introduce ideas and cite scholars at the moments they become relevant to what you're analyzing.</p>
+
+                <div class="article-callout" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                    <h2 class="article-callout-title">For Example</h2>
+                    <p>If you're doing a feminist reading and you reach a passage about a female character's silence, that's where you might bring in a scholar who's written about silence as a gendered move. The lens shows up <em>through</em> the analysis instead of being announced first.</p>
+                </div>
+            </section>
+
+
+
+            <hr class="article-divider">
+
+            <!-- RELATED -->
+            <section class="article-section">
+                <h2 class="article-heading">Related Pages</h2>
+
+                <ul class="article-bordered-list article-bordered-list--spaced">
+                    <li><strong class="label--read"><a href="close-reading-example.html" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">Close Reading Example</a></strong>
+                        <p>A worked example showing what close reading looks like when it's broken out of essay form into something more visual.</p>
+                    </li>
+                    <li class="border--watch"><strong class="label--watch"><a href="literary-theory-frameworks.html" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">Literary Theory &amp; Frameworks</a></strong>
+                        <p>Help choosing and learning the critical lens you'll use.</p>
+                    </li>
+                    <li class="border--alert"><strong class="label--alert"><a href="finding-sources.html" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">Finding Sources</a></strong>
+                        <p>Where to look for scholarly sources, what counts, and how to evaluate them.</p>
+                    </li>
+                    <li><strong class="label--read"><a href="mla-citations.html" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">MLA Citations</a></strong>
+                        <p>How to handle citations on your site.</p>
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="../footer.js"></script>
+    <script src="fp-nav.js"></script>
+    <script>
+    (function() {
+        const toggle = document.getElementById('article-theme-toggle');
+        if (!toggle) return;
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        const body = document.body;
+
+        if (localStorage.getItem('article-theme') === 'light') {
+            body.classList.add('light-mode');
+            icon.textContent = 'dark_mode';
+        }
+
+        toggle.addEventListener('click', function() {
+            body.classList.toggle('light-mode');
+            if (body.classList.contains('light-mode')) {
+                localStorage.setItem('article-theme', 'light');
+                icon.textContent = 'dark_mode';
+            } else {
+                localStorage.setItem('article-theme', 'dark');
+                icon.textContent = 'light_mode';
+            }
+        });
+    })();
+    </script>
+</body>
+</html>
