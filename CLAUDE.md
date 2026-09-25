@@ -1,3 +1,5 @@
+> **For human readers:** This file gives Claude, an AI coding assistant, instructions for helping me with the technical work on this website: coding, page layout, accessibility, and keeping links current. The course content is written by me. Any revision suggestions Claude makes are reviewed by me before anything changes.
+
 # 2740 Site Repo
 
 Course site for ENGL 2740 — African American Literature, Macomb Community College. This is the only class taught remotely, over Zoom.
